@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "724033208814",
+    "firebase_url": "https://scout-city-guide.firebaseio.com",
+    "project_id": "scout-city-guide",
+    "storage_bucket": "scout-city-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724033208814:android:60a70b95d84f720ef7ceff",
+        "android_client_info": {
+          "package_name": "com.developerdepository.scout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724033208814-s2rue9cbrm92rlmg2mig6h6hvfp9sfjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developerdepository.scout",
+            "certificate_hash": "YOUR_OWN_CERTIFICATE_HASH"
+          }
+        },
+        {
+          "client_id": "724033208814-ohplh7hl8j5lrk80cihilo7i3p42ltmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrXxAZAPMrgSfF2p7moMJ5cG7e14N_rfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724033208814-ohplh7hl8j5lrk80cihilo7i3p42ltmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

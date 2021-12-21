@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFA600</color>
+    <color name="colorAccent">#272727</color>
+
+    <color name="lightWhite">#F5F5F5</color>
+    <color name="errorColor">#B71C1C</color>
+    <color name="infoColor">#0F4C81</color>
+    <color name="successColor">#00BDAA</color>
+    <color name="inactiveBottomNavColor">#9FA2A5</color>
+
+    <!-- Dashboard Colors -->
+
+    <!-- Body and Background Colors -->
+    <color name="dashboard_background">#F2F5F8</color>
+    <color name="add_places_btn_background">#66FFA600</color>
+    <color name="banner_background">#F1E9CE</color>
+    <color name="banner_background_light">#56F1E9CE</color>
+    
+    <!-- Card Colors -->
+    <color name="card1">#D4CBE5</color>
+    <color name="card2">#7ADCCF</color>
+    <color name="card3">#F7C59F</color>
+    <color name="card4">#B8D7F5</color>
+    <color name="card5">#E19C9C</color>
+
+
+
+    <!-- All Categories Colors -->
+    <color name="allCategory1">#FFE400</color>
+    <color name="allCategory2">#272727</color>
+    <color name="allCategory3">#0F3C8D</color>
+    <color name="allCategory4">#EE4E4E</color>
+    <color name="allCategory5">#39B87D</color>
+    <color name="allCategory6">#934CA8</color>
+    <color name="allCategory7">#39ABB8</color>
+    <color name="allCategory8">#942020</color>
+    <color name="allCategory9">#B88939</color>
+    <color name="allCategory10">#0C6058</color>
+</resources>

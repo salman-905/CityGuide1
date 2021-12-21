@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.developerdepository.scout">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:fullBackupOnly="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon, android:allowBackup">
+        <activity
+            android:name=".User.CurrencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ShopsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.HotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RestaurantsActivity"
+            android:exported="false" />
+        <activity android:name=".LocationOwner.RetailerDashboardActivity" />
+        <activity android:name=".Common.LoginSignup.SetPasswordSuccessMessageActivity" />
+        <activity android:name=".Common.LoginSignup.SetNewPasswordActivity" />
+        <activity android:name=".Common.LoginSignup.MakeSelectionActivity" />
+        <activity android:name=".Common.LoginSignup.ForgotPasswordActivity" />
+        <activity android:name=".Common.LoginSignup.VerifyOTPActivity" />
+        <activity android:name=".Common.LoginSignup.RetailerSignUp3Activity" />
+        <activity android:name=".Common.LoginSignup.RetailerSignUp2Activity" />
+        <activity android:name=".Common.LoginSignup.RetailerSignUp1Activity" />
+        <activity android:name=".Common.LoginSignup.RetailerLoginActivity" />
+        <activity android:name=".Common.LoginSignup.RetailerStartUpScreenActivity" />
+        <activity android:name=".User.AllCategoriesActivity" />
+        <activity android:name=".Common.OnBoardingActivity" />
+        <activity android:name=".User.UserDashboardActivity" />
+        <activity android:name=".Common.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
