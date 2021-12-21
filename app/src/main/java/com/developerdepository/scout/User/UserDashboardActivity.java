@@ -156,7 +156,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         }
         return false;
     }
-//dd
+
     private void animateNavigationDrawer() {
         dashboardDrawerLayout.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
             @Override
