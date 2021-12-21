@@ -66,7 +66,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         setMostViewedRecycler();
         setCategoriesRecycler();
         setActionOnViews();
-        
+
         imgBtnRe = findViewById(R.id.imgBtnRe);
         imgBtnHo = findViewById(R.id.imgBtnHo);
         imgBtnEd = findViewById(R.id.imgBtnEd);
