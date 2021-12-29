@@ -8,6 +8,8 @@
     android:background="@color/lightWhite"
     tools:context=".User.AllCategoriesActivity">
 
+
+
     <ImageButton
         android:id="@+id/back_arrow_btn"
         android:layout_width="32dp"
