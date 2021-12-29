@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SCOUT</string>
+    <string name="first_slide_title">ابحث عن الموقع</string>
+    <string name="skip_btn">تخطي</string>
+    <string name="next_btn">التالي</string>
+    <string name="lets_get_started">لنبدأ</string>
+    <string name="hotels">الفنادق</string>
+    <string name="restaurants" translatable="false">المطاعم</string>
+    <string name="shops">السوق</string>
+    <string name="banks">البنوك</string>
+    <string name="education">التعليم</string>
+    <string name="hospitals">المستشفيات</string>
+    <string name="airports">المطار</string>
+    <string name="sports">الرياضة</string>
+    <string name="travel">السفر</string>
+    <string name="carRent">تأجير السيارات</string>
+    <string name="most_viewed_locations">الاكثر مشاهدة</string>
+    <string name="categories">الفئات</string>
+    <string name="view_all" translatable="false">مشاهدة الكل</string>
+    <string name="search_text">ابحث عن موقع</string>
+    <string name="navHome">الرئيسية</string>
+    <string name="navSearch">البحث</string>
+    <string name="navAllCategories" translatable="false">كل الفئات</string>
+    <string name="navCurrency">تبادل العملات</string>
+    <string name="navCategoriesTitle">الفئات</string>
+    <string name="navRestaurants">المطاعم</string>
+    <string name="navHotels">الفنادق</string>
+    <string name="navEducation">التعليم</string>
+    <string name="navShops">السوق</string>
+    <string name="navCommunicationTitle">التوصل</string>
+    <string name="navShare">مشاركة</string>
+    <string name="navRateUs">قيمنا</string>
+    <string name="navContactUs">تواصل معنا</string>
+    <string name="navAboutUs">عنا</string>
+    <string name="exitDialogMessage">هل تريد الخروج؟</string>
+    <string name="exitDialogConfirm">نعم</string>
+    <string name="exitDialogCancel">لا</string>
+    <string name="allCategoriesTitle">جميع الفئات</string>
+    <string name="select_lang">اختر لغة</string>
+    <string name="king_faisal_university">جامعة الملك فيصل</string>
+    <string name="imam_muhammad_bin_saud_islamic_university">جامعة الامام محمد بن سعود الاسلامية</string>
+    <string name="king_suad_university">جامعة الملك سعود للعلوم الصحية</string>
+    <string name="arab_open_university">جامعة العربية المفتوحة</string>
+    <string name="national_industrial_training_institute">المعهد الوطني للتدريب الصناعي</string>
+    <string name="technical_and_vocational_training_corporation">كلية التقنية</string>
+    <string name="wall_street_english">وول ستريت انجليزي</string>
+    <string name="al_anjal_national_schools">مدارس الانجال</string>
+    <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
+    <string name="alkhaleej_training_and_education">معهد الخليج</string>
+</resources>

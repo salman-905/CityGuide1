@@ -35,7 +35,7 @@
             android:title="@string/navCurrency"
             android:icon="@drawable/ic_menu_add_places"
             android:iconTint="@android:color/black"
-            android:orderInCategory="400"/>
+            android:orderInCategory="500"/>
 
     </group>
 
