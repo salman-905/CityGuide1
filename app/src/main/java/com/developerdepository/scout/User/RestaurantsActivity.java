@@ -65,8 +65,6 @@ public class RestaurantsActivity extends AppCompatActivity {
 
 
 
-        
-
         image7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
