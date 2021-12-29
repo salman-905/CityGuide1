@@ -29,6 +29,9 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/CityGuide-master/app/src/main/res/layout/layout_navigation_menu_header.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/CityGuide-master/app/src/main/res/layout/layout_onboarding_slider.xml" value="0.42916666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/CityGuide-master/app/src/main/res/menu/main_menu.xml" value="0.42916666666666664" />
+        <entry key="..\:/Users/pc/Documents/GitHub/CityGuide1/app/src/main/res/drawable/ic_restaurant.xml" value="0.43846153846153846" />
+        <entry key="..\:/Users/pc/Documents/GitHub/CityGuide1/app/src/main/res/layout/activity_all_categories.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/pc/Documents/GitHub/CityGuide1/app/src/main/res/layout/activity_restaurants.xml" value="0.21384248210023865" />
         <entry key="..\:/Users/pc/Downloads/SCOUT---City-Guide-Application-for-Android-master/app/src/main/res/drawable/bg_bottom_nav_round_corners.xml" value="0.43846153846153846" />
         <entry key="..\:/Users/pc/Downloads/SCOUT---City-Guide-Application-for-Android-master/app/src/main/res/drawable/ic_bottom_nav_dot.xml" value="0.43846153846153846" />
         <entry key="..\:/Users/pc/Downloads/SCOUT---City-Guide-Application-for-Android-master/app/src/main/res/drawable/ic_bottom_nav_profile.xml" value="0.43846153846153846" />
@@ -89,5 +92,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.21384248210023865" />
+      </ProjectState>
+    </option>
   </component>
 </project>
