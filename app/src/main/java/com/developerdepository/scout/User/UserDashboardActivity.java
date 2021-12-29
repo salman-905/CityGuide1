@@ -83,6 +83,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserDashboardActivity.this, HotelsActivity.class));
+
             }
         });
 
@@ -178,14 +179,18 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     private void setFeaturedRecycler() {
         //Setting Featured Locations Recycler
         featuredRecycler.setHasFixedSize(true);
-        featuredRecycler.setLayoutManager(new LinearLayoutManager(UserDashboardActivity.this, LinearLayoutManager.HORIZONTAL, false));
+        featuredRecycler.setLayoutManager(new LinearLayoutManager(UserDashboardActivity.this, LinearLayoutManager.HORIZONTAL, false ));
 
         ArrayList<FeaturedModel> featuredLocations = new ArrayList<>();
 
-        featuredLocations.add(new FeaturedModel(R.drawable.img_placeholder1, "ScrapYard", "ScrapYard is the best rated restaurant in the location at the moment."));
-        featuredLocations.add(new FeaturedModel(R.drawable.img_placeholder2, "Radisson Blu", "Radisson Blu is the best rated hotel in the location at the moment."));
-        featuredLocations.add(new FeaturedModel(R.drawable.img_placeholder3, "Chapter7", "Chapter7 is the best rated club in the location at the moment."));
-        featuredLocations.add(new FeaturedModel(R.drawable.img_placeholder4, "Squared", "Squared is the best rated multi-purpose store in the location at the moment."));
+        featuredLocations.add(new FeaturedModel(R.drawable.thumbnail_16, "Uqair Beach", "Uqair Beach is the best rated Beach in Al-Ahsa'a at the moment.",4.1, "https://goo.gl/maps/VsvYoYf4hKAYZKdq6"));
+        featuredLocations.add(new FeaturedModel(R.drawable.garah, "Al-Qarah Mountain", "From the breathtaking summit of Al Qarah Mountain, Arabic translations of the surrounding region’s place names bring new meaning.",4.1,"https://goo.gl/maps/sif9HkYrGtzmLopY7"));
+        featuredLocations.add(new FeaturedModel(R.drawable.ysea, "Al-Asfar Lake", "Al-Asfar Lake is a lake located in Al-Omran east of Al-Ahsa in Saudi Arabia. It is considered the largest watershed in the Gulf region, and it is the only one in the Kingdom of its kind in which an integrated wildlife lives.",3.9, "https://goo.gl/maps/HcwayaM5mNTmFkys7"));
+        featuredLocations.add(new FeaturedModel(R.drawable.juatha, "Jawatha City", "The city of Jawatha is a historic treasure of the Kingdom, because it was once a palace or fortress used by Abd al-Qays, Bahrain. It was mentioned in the Book of the Status of the Arabian Island, settled by nations for the rich eyes and fertility of its agricultural soil.",4.4, "https://goo.gl/maps/ChwGniSrBxQ3dH4m6"));
+        featuredLocations.add(new FeaturedModel(R.drawable.alarba, "Al-Arbaa Mountain", "Jabal Al-Arbaa is a wonderful rock formation located in south Al-Hofuf and is one of the well-known group of mountains in Al-Ahsa. It is named after its four conical shaped plateaus, two joined together and the other two separate from each other.",4.2, "https://goo.gl/maps/dMR1ipYXiwkMxMz77"));
+        featuredLocations.add(new FeaturedModel(R.drawable.alshabah, "Al-Shu'ba Mountain", "Al-Shu'ba mountain located in east of Al-Shu'ba village at Al-Ahsa and to the north of Al-Eskan next to the road leading from eastern villages to the northern villages and to Al-Dammam.",4.0, "https://goo.gl/maps/ic6gMSsEL8cVNsiu8"));
+        featuredLocations.add(new FeaturedModel(R.drawable.park, "King Abdullah Park", "Located in the southern part of Al Hofuf, King Abdullah Environmental Park is one of the best amusement options in this region.",3.9, "https://goo.gl/maps/kHq7VxmTwDS5zjox6"));
+        featuredLocations.add(new FeaturedModel(R.drawable.zoo, "Zoo Park", "Al-Tharf Model Garden or Al-Ahsa Zoo is a park that includes many animals located in Al-Ahsa Governorate in the Eastern Province of Saudi Arabia. The park is also one of Al-Ahsa’s tourist attractions.",3.3, "https://goo.gl/maps/MDtYUvrYjx6fT49X8"));
 
         featuredAdapter = new FeaturedLocationsAdapter(featuredLocations);
 
@@ -199,10 +204,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         ArrayList<MostViewedModel> mostViewedLocations = new ArrayList<>();
 
-        mostViewedLocations.add(new MostViewedModel(R.drawable.img_placeholder3, "Chapter7", "Chapter7 is the best rated club in the location at the moment."));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.img_placeholder4, "Squared", "Squared is the best rated multi-purpose store in the location at the moment."));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.img_placeholder1, "ScrapYard", "ScrapYard is the best rated restaurant in the location at the moment."));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.img_placeholder2, "Radisson Blu", "Radisson Blu is the best rated hotel in the location at the moment."));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.house, "House of Allegiance", "The House of Allegiance or House of Allegiance is a historical house located in the Al Kut neighborhood of Al Hofuf Al Ahsa’iya city, Kingdom of Saudi Arabia. It is the house of Abdul Latif bin Abdul Rahman Al-Mulla, the head of the Al-Mulla family, and the house of the one who witnessed the people of Al-Ahsa pledge allegiance to King Abdul Aziz and their accession to the Saudi state in 1913.",  4.1, "https://goo.gl/maps/p5QXwJvbgVx8sT5D9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.ibrahem, "Ibrahim Palace", "The Ibrahim Palace was built during the time of the first Saudi state and is considered to be an architectural masterpiece.",  4.2, "https://goo.gl/maps/d46xCcZon2Au4cLW9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.sahood, "Sahood Fort ", "Sahood Fort is situated outside the western walls of Al Mubarraz, Saudi Arabia. The fort is used as barracks for the Saudi Arabian Armed Forces.",  4.0, "https://goo.gl/maps/7sE3UNmeVwJRtrh89"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.muqair, "Old Al Uqayr Seaport", "Uqair is the site of numerous historic meetings between the founding king and foreign diplomats and the place in which he conducted negotiations with international political forces in the region.",  4.3, "https://goo.gl/maps/BDwqm4NjFLkApL397"));
 
         mostViewedAdapter = new MostViewedLocationsAdapter(mostViewedLocations);
 
