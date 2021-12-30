@@ -8,33 +8,33 @@
 
     <!-- Titles -->
     <string name="first_slide_title">Search Your Location</string>
-    <string name="second_slide_title" translatable="false">Make A Call</string>
-    <string name="third_slide_title" translatable="false">Add Missing Place</string>
-    <string name="fourth_slide_title" translatable="false">Sit Back &amp; Enjoy</string>
+    <string name="second_slide_title">Make A Call</string>
+    <string name="third_slide_title">Add Missing Place</string>
+    <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
 
     <!-- Descriptions -->
-    <string name="first_slide_desc" translatable="false">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
-    <string name="second_slide_desc" translatable="false">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
-    <string name="third_slide_desc" translatable="false">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
-    <string name="fourth_slide_desc" translatable="false">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
+    <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
+    <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
+    <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
+    <string name="fourth_slide_desc">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
 
     <!-- Buttons -->
-    <string name="skip_btn" translatable="false">SKIP</string>
-    <string name="next_btn" translatable="false">NEXT</string>
-    <string name="lets_get_started" translatable="false">LET\'S GET STARTED</string>
+    <string name="skip_btn">SKIP</string>
+    <string name="next_btn">NEXT</string>
+    <string name="lets_get_started">LET\'S GET STARTED</string>
 
 
     <!-- Categories -->
-    <string name="hotels" translatable="false">Hotels</string>
-    <string name="restaurants" translatable="false">Restaurants</string>
-    <string name="shops" translatable="false">Shops</string>
-    <string name="banks" translatable="false">Banks</string>
-    <string name="education" translatable="false">Education</string>
-    <string name="hospitals" translatable="false">Hospitals</string>
-    <string name="airports" translatable="false">Airports</string>
-    <string name="sports" translatable="false">Sports</string>
-    <string name="travel" translatable="false">Travel</string>
-    <string name="carRent" translatable="false">Car Rent</string>
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shops">Shops</string>
+    <string name="banks">Banks</string>
+    <string name="education">Education</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="airports">Airports</string>
+    <string name="sports">Sports</string>
+    <string name="travel">Travel</string>
+    <string name="carRent">Car Rent</string>
 
 
     <!-- Strings for Dashboard -->
@@ -42,10 +42,10 @@
     <!-- Titles and Descriptions -->
     <string name="featured_locations" translatable="false">All\nFeatured\nLocations</string>
     <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
-    <string name="most_viewed_locations" translatable="false">Most Viewed</string>
-    <string name="categories" translatable="false">Categories</string>
-    <string name="view_all" translatable="false">View All</string>
-    <string name="search_text" translatable="false">Search a location</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Search a location</string>
 
     <!-- Featured Locations Card Defaults -->
     <string name="featured_item_placeholder_title" translatable="false">ScrapYard</string>
@@ -56,36 +56,36 @@
     <string name="most_viewed_item_placeholder_desc" translatable="false">Chapter7 is the best rated club in the location at the moment.</string>
 
     <!-- Strings for Navigation Menu -->
-    <string name="navHome" translatable="false">Home</string>
-    <string name="navSearch" translatable="false">Search</string>
-    <string name="navAllCategories" translatable="false">All Categories</string>
+    <string name="navHome">Home</string>
+    <string name="navSearch">Search</string>
+    <string name="navAllCategories">All Categories</string>
     <string name="navAddMissingPlaces" translatable="false">Add Missing Place</string>
-    <string name="navCurrency" translatable="false">Exchange Currency</string>
+    <string name="navCurrency">Exchange Currency</string>
     <string name="navProfileTitle" translatable="false">Profile</string>
     <string name="navLogin" translatable="false">Log In</string>
     <string name="navProfile" translatable="false">Profile</string>
     <string name="navLogOut" translatable="false">Log Out</string>
-    <string name="navCategoriesTitle" translatable="false">Categories</string>
-    <string name="navRestaurants" translatable="false">Restaurants</string>
-    <string name="navHotels" translatable="false">Hotels</string>
-    <string name="navEducation" translatable="false">Education</string>
-    <string name="navShops" translatable="false">Shops</string>
-    <string name="navCommunicationTitle" translatable="false">Communication</string>
-    <string name="navShare" translatable="false">Share</string>
-    <string name="navRateUs" translatable="false">Rate Us</string>
-    <string name="navContactUs" translatable="false">Contact Us</string>
-    <string name="navAboutUs" translatable="false">About Us</string>
+    <string name="navCategoriesTitle">Categories</string>
+    <string name="navRestaurants">Restaurants</string>
+    <string name="navHotels">Hotels</string>
+    <string name="navEducation">Education</string>
+    <string name="navShops">Shops</string>
+    <string name="navCommunicationTitle">Communication</string>
+    <string name="navShare">Share</string>
+    <string name="navRateUs">Rate Us</string>
+    <string name="navContactUs">Contact Us</string>
+    <string name="navAboutUs">About Us</string>
     <string name="navPrivacyPolicy" translatable="false">Privacy Policy</string>
 
     <!-- Exit Dialog Strings -->
     <string name="exitDialogTitle" translatable="false">Exit SCOUT?</string>
-    <string name="exitDialogMessage" translatable="false">Do you really want to exit?</string>
-    <string name="exitDialogConfirm" translatable="false">YES</string>
-    <string name="exitDialogCancel" translatable="false">NO</string>
+    <string name="exitDialogMessage">Do you really want to exit?</string>
+    <string name="exitDialogConfirm">YES</string>
+    <string name="exitDialogCancel">NO</string>
 
 
     <!-- All Categories Strings -->
-    <string name="allCategoriesTitle" translatable="false">All Categories</string>
+    <string name="allCategoriesTitle">All Categories</string>
 
 
     <!-- Retailer StartUp Screen Strings -->
@@ -164,4 +164,23 @@
     <string name="setPasswordSuccessLoginBtn" translatable="false">LOGIN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="select_lang">select language</string>
+    <string name="king_faisal_university">King Faisal University (KFU)</string>
+    <string name="imam_muhammad_bin_saud_islamic_university">Imam Muhammad Bin Saud Islamic University</string>
+    <string name="king_suad_university">King Suad University</string>
+    <string name="arab_open_university">Arab Open University</string>
+    <string name="national_industrial_training_institute">National Industrial Training Institute</string>
+    <string name="technical_and_vocational_training_corporation">Technical and Vocational Training Corporation</string>
+    <string name="alkhaleej_training_and_education">Alkhaleej Training and Education</string>
+    <string name="wall_street_english">Wall Street English</string>
+    <string name="al_anjal_national_schools">Al-anjal National Schools</string>
+    <string name="future_vision_private_schools">Future Vision Private Schools</string>
+    <string name="horn">Horn</string>
+    <string name="restaurents">Restaurents</string>
+    <string name="tendrliune">Tendrliune</string>
+    <string name="todo">TODO</string>
+    <string name="khaibar">Khaibar</string>
+    <string name="topaz">Topaz</string>
+    <string name="bharat">Bharat</string>
+
 </resources>
