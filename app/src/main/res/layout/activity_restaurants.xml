@@ -7,36 +7,40 @@
     android:layout_height="match_parent"
     android:background="@color/lightWhite"
     tools:context=".User.AllCategoriesActivity">
-    
+
     <ImageButton
         android:id="@+id/back_arrow_btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
-        app:tint="@android:color/black"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_back_arrow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/black"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/search_btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
-        app:tint="@android:color/black"
         android:scaleType="centerInside"
         android:src="@drawable/ic_search"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/black"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"
@@ -48,27 +52,47 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_arrow_btn">
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow_btn"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/all_categories_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/restaurents"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/category1_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory1"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/all_categories_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/all_categories_title"
                 tools:ignore="NotSibling">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,20 +106,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
                         android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginBottom="24dp"
-                        android:text="Tendrliune"
-                        android:textColor="@android:color/black"
-                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/tendrliune"
                         android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -106,8 +130,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginEnd="24dp"
-                android:scaleType="centerInside"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/tnnd"
                 app:layout_constraintBottom_toTopOf="@+id/category1_container"
                 app:layout_constraintEnd_toEndOf="@+id/category1_container"
@@ -117,16 +141,16 @@
                 android:id="@+id/category2_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory6"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category1_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category1_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category2"
@@ -142,17 +166,17 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="24dp"
                         android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
                         android:text="Hasa Gril"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
                         android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -163,8 +187,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
-                android:scaleType="centerInside"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/xdxd"
                 app:layout_constraintBottom_toTopOf="@+id/category2_container"
                 app:layout_constraintStart_toStartOf="@+id/category2_container"
@@ -174,16 +198,16 @@
                 android:id="@+id/category3_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory3"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category2_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category2_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category3"
@@ -196,20 +220,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
                         android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
                         android:text="AL-Keet"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
                         android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -220,8 +244,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginEnd="24dp"
-                android:scaleType="centerInside"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/kk"
                 app:layout_constraintBottom_toTopOf="@+id/category3_container"
                 app:layout_constraintEnd_toEndOf="@+id/category3_container"
@@ -231,16 +255,16 @@
                 android:id="@+id/category4_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory4"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category3_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category3_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category4"
@@ -256,17 +280,17 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="24dp"
                         android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
                         android:text="Casa Pasta"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
                         android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -277,8 +301,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
-                android:scaleType="centerInside"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ccc"
                 app:layout_constraintBottom_toTopOf="@+id/category4_container"
                 app:layout_constraintStart_toStartOf="@+id/category4_container"
@@ -288,16 +312,16 @@
                 android:id="@+id/category5_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory5"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category4_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category4_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category5"
@@ -310,20 +334,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
                         android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
                         android:text="Lava"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
                         android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -334,8 +358,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginEnd="24dp"
-                android:scaleType="centerInside"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ll"
                 app:layout_constraintBottom_toTopOf="@+id/category5_container"
                 app:layout_constraintEnd_toEndOf="@+id/category5_container"
@@ -345,16 +369,16 @@
                 android:id="@+id/category6_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="@color/allCategory6"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category5_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category5_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category6"
@@ -370,17 +394,17 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="24dp"
                         android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
                         android:text="Dunkin Dounet"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
                         android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -391,8 +415,9 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
-                android:scaleType="centerInside"
+                android:contentDescription="TODO"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ddd"
                 app:layout_constraintBottom_toTopOf="@+id/category6_container"
                 app:layout_constraintStart_toStartOf="@+id/category6_container"
@@ -402,16 +427,16 @@
                 android:id="@+id/category7_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory1"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category6_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category6_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category7"
@@ -424,20 +449,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
                         android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginBottom="24dp"
-                        android:text="Bharat"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/bharat"
                         android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -448,8 +473,9 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginEnd="24dp"
-                android:scaleType="centerInside"
+                android:contentDescription="@string/todo"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/bh"
                 app:layout_constraintBottom_toTopOf="@+id/category7_container"
                 app:layout_constraintEnd_toEndOf="@+id/category7_container"
@@ -459,16 +485,16 @@
                 android:id="@+id/category8_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory2"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category7_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category7_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category8"
@@ -484,17 +510,17 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="24dp"
                         android:layout_marginBottom="24dp"
-                        android:text="Horn"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/horn"
                         android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -505,8 +531,9 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
-                android:scaleType="centerInside"
+                android:contentDescription="@string/todo"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ho"
                 app:layout_constraintBottom_toTopOf="@+id/category8_container"
                 app:layout_constraintStart_toStartOf="@+id/category8_container"
@@ -516,16 +543,16 @@
                 android:id="@+id/category9_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 app:cardBackgroundColor="@color/allCategory9"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintTop_toBottomOf="@+id/category8_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category8_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category9"
@@ -538,20 +565,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
                         android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginBottom="24dp"
-                        android:text="Topaz"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/topaz"
                         android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -562,8 +589,9 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginEnd="24dp"
-                android:scaleType="centerInside"
+                android:contentDescription="TODO"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/to"
                 app:layout_constraintBottom_toTopOf="@+id/category9_container"
                 app:layout_constraintEnd_toEndOf="@+id/category9_container"
@@ -573,8 +601,8 @@
                 android:id="@+id/category10_container"
                 android:layout_width="0dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="64dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="40dp"
                 app:cardBackgroundColor="@color/allCategory10"
@@ -582,9 +610,9 @@
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/category9_container"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category9_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/category10"
@@ -600,17 +628,17 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="24dp"
                         android:layout_marginBottom="24dp"
-                        android:text="Khaibar"
-                        android:textColor="@android:color/white"
-                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/khaibar"
                         android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
                         android:textSize="28sp"
                         android:textStyle="bold"
-                        android:includeFontPadding="false"
-                        android:fontFamily="@font/poppins_medium"
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -621,32 +649,16 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
-                android:scaleType="centerInside"
+                android:contentDescription="TODO"
                 android:elevation="10dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ko"
                 app:layout_constraintBottom_toTopOf="@+id/category10_container"
                 app:layout_constraintStart_toStartOf="@+id/category10_container"
                 app:layout_constraintTop_toTopOf="@+id/category10_container" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.core.widget.NestedScrollView>
 
-    <TextView
-        android:id="@+id/all_categories_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:includeFontPadding="false"
-        android:text="Restaurants"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/search_btn"
-        app:layout_constraintStart_toEndOf="@+id/back_arrow_btn"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="22dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
