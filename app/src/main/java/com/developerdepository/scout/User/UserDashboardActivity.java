@@ -8,11 +8,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -29,6 +33,7 @@ import com.shreyaspatil.MaterialDialog.MaterialDialog;
 import com.shreyaspatil.MaterialDialog.interfaces.DialogInterface;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import maes.tech.intentanim.CustomIntent;
 
@@ -44,7 +49,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     private RecyclerView featuredRecycler, mostViewedRecycler, categoriesRecycler;
     private TextView categoriesViewAll;
     private ImageButton imgBtnRe, imgBtnHo, imgBtnEd, imgBtnSh;
-
+    private Button button;
     //Other Variables
     private RecyclerView.Adapter featuredAdapter, mostViewedAdapter, categoriesAdapter;
     private static final float END_SCALE = 0.8f;
@@ -270,4 +275,19 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             materialDialog.show();
         }
     }
+
+
+
+
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+    }
+
+
+
 }
