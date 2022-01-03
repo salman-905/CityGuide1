@@ -16,8 +16,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.developerdepository.scout.Common.LoginSignup.RetailerStartUpScreenActivity;
@@ -53,6 +56,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     //Other Variables
     private RecyclerView.Adapter featuredAdapter, mostViewedAdapter, categoriesAdapter;
     private static final float END_SCALE = 0.8f;
+
+    Spinner spinner;
+    public static final String[] languages = {"Select Language", "English", "Arabic"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +112,43 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedLang = adapterView.getItemAtPosition(i).toString();
+
+                if (selectedLang.equals("English")){
+                    setLocal(UserDashboardActivity.this, "en");
+                    finish();
+                    startActivity(getIntent());
+                }else if(selectedLang.equals("Arabic")){
+                    setLocal(UserDashboardActivity.this, "ar");
+                    finish();
+                    startActivity(getIntent());
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+    }
+
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 
     private void initViews() {
@@ -217,9 +260,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         mostViewedLocations.add(new MostViewedModel(R.drawable.mehers, "Muhairis Palace", "Muhairis Palace is a palace built by Imam Saud bin Abdul Aziz on the top of a hill in 1208 AH for military purposes.",  3.5, "https://goo.gl/maps/pAWeGE75s8JaXH5T6"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.khusam, "Khuzam Palace ", "Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.",  2.5, "https://goo.gl/maps/8QXrya6cbGwX6oKm8"));
 
-
-
-
         mostViewedAdapter = new MostViewedLocationsAdapter(mostViewedLocations);
 
         mostViewedRecycler.setAdapter(mostViewedAdapter);
@@ -286,19 +326,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             materialDialog.show();
         }
     }
-
-
-
-
-    public void setLocal(Activity activity, String langCode){
-        Locale locale = new Locale(langCode);
-        locale.setDefault(locale);
-        Resources resources = activity.getResources();
-        Configuration config = resources.getConfiguration();
-        config.setLocale(locale);
-        resources.updateConfiguration(config, resources.getDisplayMetrics());
-    }
-
 
 
 }
