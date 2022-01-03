@@ -9,12 +9,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import com.developerdepository.scout.R;
 
 public class EducationActivity extends AppCompatActivity {
 
     ConstraintLayout c1, c2, c3, c4, c5, c6, c7, c8, c9, c10;
+    ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,14 @@ public class EducationActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_education);
+
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         // KFU
         c1 = findViewById(R.id.category1);
