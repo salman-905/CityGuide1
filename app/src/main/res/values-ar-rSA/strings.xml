@@ -1,13 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SCOUT</string>
-    <string name="first_slide_title">ابحث عن الموقع</string>
+    <string name="app_slogan">Helps You Get A Way</string>
+    <string name="app_powered_by1">Powered by</string>
+    <string name="app_powered_by2">Developer Depository</string>
+
+    <!-- Strings for OnBoardingScreen -->
+
+    <!-- Titles -->
+    <string name="first_slide_title">Search Your Location</string>
+    <string name="second_slide_title">Make A Call</string>
+    <string name="third_slide_title">Add Missing Place</string>
+    <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
+
+    <!-- Descriptions -->
+    <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
+    <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
+    <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
+    <string name="fourth_slide_desc">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
+
+    <!-- Buttons -->
     <string name="skip_btn">تخطي</string>
     <string name="next_btn">التالي</string>
-    <string name="lets_get_started">لنبدأ</string>
+    <string name="lets_get_started">LET\'S GET STARTED</string>
+
+
+    <!-- Categories -->
     <string name="hotels">الفنادق</string>
-    <string name="restaurants" translatable="false">المطاعم</string>
-    <string name="shops">السوق</string>
+    <string name="restaurants">المطاعم</string>
+    <string name="shops">الاسواق</string>
     <string name="banks">البنوك</string>
     <string name="education">التعليم</string>
     <string name="hospitals">المستشفيات</string>
@@ -15,37 +35,142 @@
     <string name="sports">الرياضة</string>
     <string name="travel">السفر</string>
     <string name="carRent">تأجير السيارات</string>
+
+
+    <!-- Strings for Dashboard -->
+
+    <!-- Titles and Descriptions -->
+    <string name="featured_locations" translatable="false">All\nFeatured\nLocations</string>
+    <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
     <string name="most_viewed_locations">الاكثر مشاهدة</string>
     <string name="categories">الفئات</string>
-    <string name="view_all" translatable="false">مشاهدة الكل</string>
+    <string name="view_all">مشاهدة الكل</string>
     <string name="search_text">ابحث عن موقع</string>
+
+    <!-- Featured Locations Card Defaults -->
+
+    <!-- Most Viewed Locations Card Defaults -->
+
+    <!-- Strings for Navigation Menu -->
     <string name="navHome">الرئيسية</string>
-    <string name="navSearch">البحث</string>
-    <string name="navAllCategories" translatable="false">كل الفئات</string>
-    <string name="navCurrency">تبادل العملات</string>
+    <string name="navSearch">بحث</string>
+    <string name="navAllCategories">كل الفئات</string>
+    <string name="navAddMissingPlaces" translatable="false">Add Missing Place</string>
+    <string name="navCurrency">Exchange Currency</string>
+    <string name="navProfileTitle" translatable="false">Profile</string>
+    <string name="navLogin" translatable="false">Log In</string>
+    <string name="navProfile" translatable="false">Profile</string>
+    <string name="navLogOut" translatable="false">Log Out</string>
     <string name="navCategoriesTitle">الفئات</string>
     <string name="navRestaurants">المطاعم</string>
     <string name="navHotels">الفنادق</string>
     <string name="navEducation">التعليم</string>
-    <string name="navShops">السوق</string>
-    <string name="navCommunicationTitle">التوصل</string>
+    <string name="navShops">الاسواق</string>
+    <string name="navCommunicationTitle">التواصل</string>
     <string name="navShare">مشاركة</string>
     <string name="navRateUs">قيمنا</string>
     <string name="navContactUs">تواصل معنا</string>
     <string name="navAboutUs">عنا</string>
+    <string name="navPrivacyPolicy" translatable="false">Privacy Policy</string>
+
+    <!-- Exit Dialog Strings -->
+    <string name="exitDialogTitle" translatable="false">Exit SCOUT?</string>
     <string name="exitDialogMessage">هل تريد الخروج؟</string>
     <string name="exitDialogConfirm">نعم</string>
     <string name="exitDialogCancel">لا</string>
-    <string name="allCategoriesTitle">جميع الفئات</string>
+
+
+    <!-- All Categories Strings -->
+    <string name="allCategoriesTitle">كل الفئات</string>
+
+
+    <!-- Retailer StartUp Screen Strings -->
+    <string name="retailerStartUpTitle" translatable="false">GROW YOUR BUSINESS</string>
+    <string name="retailerStartUpMessage" translatable="false">SCOUT will help you grow your business and gain reach by taking it online.</string>
+    <string name="retailerStartUpLoginBtn" translatable="false">LOGIN</string>
+    <string name="retailerStartUpSignUpBtn" translatable="false">SIGN UP</string>
+    <string name="retailerStartUpHowWeWork" translatable="false">How We Work?</string>
+
+
+    <!-- RetailerLogin Strings -->
+    <string name="retailerLoginTitle" translatable="false">LOGIN</string>
+    <string name="retailerLoginMessage" translatable="false">Sign in to continue!</string>
+    <string name="retailerLoginUsernameHint" translatable="false">Username</string>
+    <string name="retailerLoginPasswordHint" translatable="false">Password</string>
+    <string name="retailerLoginRememberMeCheckBox" translatable="false">Remember Me</string>
+    <string name="retailerLoginForgotPassword" translatable="false">Forgot Password?</string>
+    <string name="retailerLoginBtn" translatable="false">LOGIN</string>
+    <string name="retailerLoginCreateAccountMsg" translatable="false">Don\'t have an account?</string>
+    <string name="retailerLoginCreateAccountBtn" translatable="false">Create Account</string>
+
+
+    <!-- RetailerSignUp Strings -->
+    <string name="retailerSignUpTitle" translatable="false">Create Account</string>
+    <string name="retailerSignUpMessage" translatable="false">Sign up to get started!</string>
+    <string name="retailerSignUpNameHint" translatable="false">Name</string>
+    <string name="retailerSignUpUserNameHint" translatable="false">Username</string>
+    <string name="retailerSignUpEmailHint" translatable="false">Email</string>
+    <string name="retailerSignUpMobileHint" translatable="false">Mobile</string>
+    <string name="retailerSignUpCreatePasswordHint" translatable="false">Create Password</string>
+    <string name="retailerSignUpConfirmPasswordHint" translatable="false">Confirm Password</string>
+    <string name="retailerSignUpNextBtn" translatable="false">NEXT</string>
+    <string name="retailerSignUpLoginMsg" translatable="false">Already have an account?</string>
+    <string name="retailerSignUpLoginBtn" translatable="false">Sign in</string>
+    <string name="retailerSignUpChooseGenderTxt" translatable="false">Choose Gender</string>
+    <string name="retailerSignUpMale" translatable="false">Male</string>
+    <string name="retailerSignUpFemale" translatable="false">Female</string>
+    <string name="retailerSignUpOther" translatable="false">Other</string>
+    <string name="retailerSignUpDOBTxt" translatable="false">Select Date of Birth</string>
+    <string name="retailerSignUpMobileMsg" translatable="false">A 6-digit verification code will be sent to the mobile number. Standard rates may apply.</string>
+
+
+    <!-- Retailer VerifyOTP Strings -->
+    <string name="verifyOTPTitle" translatable="false">CODE VERIFICATION</string>
+    <string name="verifyOTPMessage" translatable="false">Enter the verification code sent to\n+919915462971</string>
+    <string name="verifyOTPBtn" translatable="false">VERIFY</string>
+
+
+    <!-- Retailer Forgot Password Strings -->
+    <string name="forgotPasswordTitle" translatable="false">FORGOT PASSWORD?</string>
+    <string name="forgotPasswordMessage" translatable="false">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
+    <string name="forgotPasswordMobileHint" translatable="false">Mobile</string>
+    <string name="forgotPasswordNextBtn" translatable="false">NEXT</string>
+
+
+    <!-- Retailer Make Selection Strings -->
+    <string name="makeSelectionTitle" translatable="false">MAKE\nSELECTION</string>
+    <string name="makeSelectionMsg" translatable="false">Select what contact detail should we be using to reset your password?!</string>
+    <string name="makeSelectionViaSmsTitle" translatable="false">via sms :</string>
+    <string name="makeSelectionViaSmsValueDefault" translatable="false">+919915462971</string>
+    <string name="makeSelectionViaEmailTitle" translatable="false">via mail :</string>
+    <string name="makeSelectionViaEmailValueDefault" translatable="false">developer.depository@gmail.com</string>
+
+
+    <!-- Retailer Set New Password Strings -->
+    <string name="setNewPasswordTitle" translatable="false">NEW CREDENTIALS</string>
+    <string name="setNewPasswordMsg" translatable="false">Your identity has been verified.\nSet your new password.</string>
+    <string name="setNewPasswordHint" translatable="false">New Password</string>
+    <string name="confirmNewPasswordHint" translatable="false">Confirm Password</string>
+    <string name="updatePasswordBtn" translatable="false">UPDATE</string>
+
+
+    <!-- Password Success Message Strings -->
+    <string name="setPasswordSuccessTitle" translatable="false">PASSWORD UPDATED</string>
+    <string name="setPasswordSuccessMsg" translatable="false">Your password has been updated!</string>
+    <string name="setPasswordSuccessLoginBtn" translatable="false">LOGIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="select_lang">اختر لغة</string>
-    <string name="king_faisal_university">جامعة الملك فيصل</string>
-    <string name="imam_muhammad_bin_saud_islamic_university">جامعة الامام محمد بن سعود الاسلامية</string>
-    <string name="king_suad_university">جامعة الملك سعود للعلوم الصحية</string>
-    <string name="arab_open_university">جامعة العربية المفتوحة</string>
-    <string name="national_industrial_training_institute">المعهد الوطني للتدريب الصناعي</string>
+    <string name="king_faisal_university">جامعة الملك فيصل (KFU)</string>
+    <string name="imam_muhammad_bin_saud_islamic_university">جامعة الامام محمد بن سعود</string>
+    <string name="king_suad_university">جامعة الملك سعود</string>
+    <string name="arab_open_university">جامعة العربية المفنوحة</string>
+    <string name="national_industrial_training_institute">المعهد الثانوي الصناعي</string>
     <string name="technical_and_vocational_training_corporation">كلية التقنية</string>
-    <string name="wall_street_english">وول ستريت انجليزي</string>
-    <string name="al_anjal_national_schools">مدارس الانجال</string>
-    <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
     <string name="alkhaleej_training_and_education">معهد الخليج</string>
+    <string name="wall_street_english">معهد وول ستريت</string>
+    <string name="al_anjal_national_schools">مدارس النجاح</string>
+    <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
+    <string name="project_id">scout-city-guide</string>
+    <string name="google_storage_bucket">scout-city-guide.appspot.com</string>
 </resources>
