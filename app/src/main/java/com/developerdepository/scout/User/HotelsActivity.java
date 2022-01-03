@@ -9,14 +9,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import com.developerdepository.scout.R;
 
 
 public class HotelsActivity extends AppCompatActivity {
 
-
     ConstraintLayout h1,h2,h3,h4,h5,h6,h7,h8,h9,h10;
+    ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,14 @@ public class HotelsActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotels);
+
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         h1 = findViewById(R.id.category1);
         h1.setOnClickListener(new View.OnClickListener() {
