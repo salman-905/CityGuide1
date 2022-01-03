@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.developerdepository.scout">
+    package="com.developerdepository.scout"
+    tools:ignore="ExtraText">
 
 <!--    <supports-screens-->
 <!--        android:anyDensity="true"-->
@@ -27,6 +28,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon, android:allowBackup">
+        <activity
+            android:name=".User.testjason"
+            android:exported="false" />
         <activity
             android:name=".User.CurrencyActivity"
             android:exported="false" />
