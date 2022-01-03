@@ -42,7 +42,7 @@ public class CurrencyActivity extends AppCompatActivity {
         String[] to = {"SAR","Indian Rupees","USD","EUR"};
         ArrayAdapter ad1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,to);
         sp2.setAdapter(ad1);
-
+<!--CHANGE-->
 
         b1 = findViewById(R.id.btn1);
 

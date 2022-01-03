@@ -16,10 +16,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.developerdepository.scout.Common.LoginSignup.RetailerStartUpScreenActivity;
@@ -51,13 +49,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     private RecyclerView featuredRecycler, mostViewedRecycler, categoriesRecycler;
     private TextView categoriesViewAll;
     private ImageButton imgBtnRe, imgBtnHo, imgBtnEd, imgBtnSh;
-
+    private Button button;
     //Other Variables
     private RecyclerView.Adapter featuredAdapter, mostViewedAdapter, categoriesAdapter;
     private static final float END_SCALE = 0.8f;
-
-    Spinner spinner;
-    public static final String[] languages = {"Select Language", "English", "Arabic"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,43 +106,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
-        spinner = findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setSelection(0);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String selectedLang = adapterView.getItemAtPosition(i).toString();
-
-                if (selectedLang.equals("English")){
-                    setLocal(UserDashboardActivity.this, "en");
-                    finish();
-                    startActivity(getIntent());
-                }else if(selectedLang.equals("Arabic")){
-                    setLocal(UserDashboardActivity.this, "ar");
-                    finish();
-                    startActivity(getIntent());
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
-    }
-
-    public void setLocal(Activity activity, String langCode){
-        Locale locale = new Locale(langCode);
-        locale.setDefault(locale);
-        Resources resources = activity.getResources();
-        Configuration config = resources.getConfiguration();
-        config.setLocale(locale);
-        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 
     private void initViews() {
@@ -231,7 +189,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         ArrayList<FeaturedModel> featuredLocations = new ArrayList<>();
 
         featuredLocations.add(new FeaturedModel(R.drawable.thumbnail_16, "Uqair Beach", "Uqair Beach is the best rated Beach in Al-Ahsa'a at the moment.",4.1, "https://goo.gl/maps/VsvYoYf4hKAYZKdq6"));
-        featuredLocations.add(new FeaturedModel(R.drawable.garah, "Al-Qarah Mountain", "From the breathtaking summit of Al Qarah Mountain, Arabic translations of the surrounding region’s place names bring new meaning.",4.1,"https://goo.gl/maps/sif9HkYrGtzmLopY7"));
+        featuredLocations.add(new FeaturedModel(R.drawable.garah2, "Al-Qarah Mountain", "From the breathtaking summit of Al Qarah Mountain, Arabic translations of the surrounding region’s place names bring new meaning.",4.1,"https://goo.gl/maps/sif9HkYrGtzmLopY7"));
         featuredLocations.add(new FeaturedModel(R.drawable.ysea, "Al-Asfar Lake", "Al-Asfar Lake is a lake located in Al-Omran east of Al-Ahsa in Saudi Arabia. It is considered the largest watershed in the Gulf region, and it is the only one in the Kingdom of its kind in which an integrated wildlife lives.",3.9, "https://goo.gl/maps/HcwayaM5mNTmFkys7"));
         featuredLocations.add(new FeaturedModel(R.drawable.juatha, "Jawatha City", "The city of Jawatha is a historic treasure of the Kingdom, because it was once a palace or fortress used by Abd al-Qays, Bahrain. It was mentioned in the Book of the Status of the Arabian Island, settled by nations for the rich eyes and fertility of its agricultural soil.",4.4, "https://goo.gl/maps/ChwGniSrBxQ3dH4m6"));
         featuredLocations.add(new FeaturedModel(R.drawable.alarba, "Al-Arbaa Mountain", "Jabal Al-Arbaa is a wonderful rock formation located in south Al-Hofuf and is one of the well-known group of mountains in Al-Ahsa. It is named after its four conical shaped plateaus, two joined together and the other two separate from each other.",4.2, "https://goo.gl/maps/dMR1ipYXiwkMxMz77"));
@@ -253,8 +211,14 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         mostViewedLocations.add(new MostViewedModel(R.drawable.house, "House of Allegiance", "The House of Allegiance or House of Allegiance is a historical house located in the Al Kut neighborhood of Al Hofuf Al Ahsa’iya city, Kingdom of Saudi Arabia. It is the house of Abdul Latif bin Abdul Rahman Al-Mulla, the head of the Al-Mulla family, and the house of the one who witnessed the people of Al-Ahsa pledge allegiance to King Abdul Aziz and their accession to the Saudi state in 1913.",  4.1, "https://goo.gl/maps/p5QXwJvbgVx8sT5D9"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.ibrahem, "Ibrahim Palace", "The Ibrahim Palace was built during the time of the first Saudi state and is considered to be an architectural masterpiece.",  4.2, "https://goo.gl/maps/d46xCcZon2Au4cLW9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.sahood, "Sahood Fort ", "Sahood Fort is situated outside the western walls of Al Mubarraz, Saudi Arabia. The fort is used as barracks for the Saudi Arabian Armed Forces.",  4.0, "https://goo.gl/maps/7sE3UNmeVwJRtrh89"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.sahoood, "Sahood Fort ", "Sahood Fort is situated outside the western walls of Al Mubarraz, Saudi Arabia. The fort is used as barracks for the Saudi Arabian Armed Forces.",  4.0, "https://goo.gl/maps/7sE3UNmeVwJRtrh89"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.muqair, "Old Al Uqayr Seaport", "Uqair is the site of numerous historic meetings between the founding king and foreign diplomats and the place in which he conducted negotiations with international political forces in the region.",  4.3, "https://goo.gl/maps/BDwqm4NjFLkApL397"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "The Princes School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941.",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.mehers, "Muhairis Palace", "Muhairis Palace is a palace built by Imam Saud bin Abdul Aziz on the top of a hill in 1208 AH for military purposes.",  3.5, "https://goo.gl/maps/pAWeGE75s8JaXH5T6"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.khusam, "Khuzam Palace ", "Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.",  2.5, "https://goo.gl/maps/8QXrya6cbGwX6oKm8"));
+
+
+
 
         mostViewedAdapter = new MostViewedLocationsAdapter(mostViewedLocations);
 
@@ -322,4 +286,19 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             materialDialog.show();
         }
     }
+
+
+
+
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+    }
+
+
+
 }
