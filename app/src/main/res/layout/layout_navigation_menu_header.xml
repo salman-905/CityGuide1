@@ -23,7 +23,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="centerInside"
-        android:src="@drawable/img_app_logo"
+        android:src="@drawable/alahsa"
         app:layout_constraintBottom_toTopOf="@+id/nav_menu_header_app_name"
         app:layout_constraintEnd_toEndOf="@+id/nav_menu_header_app_name"
         app:layout_constraintStart_toStartOf="@+id/nav_menu_header_app_name" />

@@ -8,16 +8,23 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.developerdepository.scout.R;
 
 
 public class HotelsActivity extends AppCompatActivity {
 
+
     ConstraintLayout h1,h2,h3,h4,h5,h6,h7,h8,h9,h10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //StatusBar Color
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.dashboard_background));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotels);
 
