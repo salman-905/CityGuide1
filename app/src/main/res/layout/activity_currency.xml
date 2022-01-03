@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".User.CurrencyActivity"
-    android:background="@color/lightWhite"
-
-    >
+    android:background="@color/lightWhite">
+    <!--CHANGE-->
 
     <TextView
         android:id="@+id/textView"
@@ -90,7 +89,7 @@
         android:layout_height="43dp"
         android:layout_gravity="center"
         android:background="@android:color/white"
-        android:text="@string/Convert"
+        android:text="Convert"
 
         android:textStyle="bold" />
 

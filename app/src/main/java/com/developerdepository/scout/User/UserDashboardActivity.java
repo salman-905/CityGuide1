@@ -255,11 +255,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         mostViewedLocations.add(new MostViewedModel(R.drawable.ibrahem, "Ibrahim Palace", "The Ibrahim Palace was built during the time of the first Saudi state and is considered to be an architectural masterpiece.",  4.2, "https://goo.gl/maps/d46xCcZon2Au4cLW9"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.sahoood, "Sahood Fort ", "Sahood Fort is situated outside the western walls of Al Mubarraz, Saudi Arabia. The fort is used as barracks for the Saudi Arabian Armed Forces.",  4.0, "https://goo.gl/maps/7sE3UNmeVwJRtrh89"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.muqair, "Old Al Uqayr Seaport", "Uqair is the site of numerous historic meetings between the founding king and foreign diplomats and the place in which he conducted negotiations with international political forces in the region.",  4.3, "https://goo.gl/maps/BDwqm4NjFLkApL397"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "The Amiri School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941 AD",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "The Princes School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941.",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.mehers, "Muhairis Palace", "Muhairis Palace is a palace built by Imam Saud bin Abdul Aziz on the top of a hill in 1208 AH for military purposes.",  3.5, "https://goo.gl/maps/pAWeGE75s8JaXH5T6"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.khusam, "Khuzam Palace ", "Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.",  2.5, "https://goo.gl/maps/8QXrya6cbGwX6oKm8"));
+
 
 
 
