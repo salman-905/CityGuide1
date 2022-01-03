@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">SCOUT</string>
+    <string name="app_name">Alahsaa Tour</string>
     <string name="app_slogan">Helps You Get A Way</string>
     <string name="app_powered_by1">Powered by</string>
-    <string name="app_powered_by2">Developer Depository</string>
+    <string name="app_powered_by2">Silah Team</string>
 
     <!-- Strings for OnBoardingScreen -->
 

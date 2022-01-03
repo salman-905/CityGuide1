@@ -8,12 +8,18 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.developerdepository.scout.Common.LoginSignup.RetailerStartUpScreenActivity;
@@ -29,6 +35,7 @@ import com.shreyaspatil.MaterialDialog.MaterialDialog;
 import com.shreyaspatil.MaterialDialog.interfaces.DialogInterface;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import maes.tech.intentanim.CustomIntent;
 
@@ -48,6 +55,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     //Other Variables
     private RecyclerView.Adapter featuredAdapter, mostViewedAdapter, categoriesAdapter;
     private static final float END_SCALE = 0.8f;
+
+    Spinner spinner;
+    public static final String[] languages = {"Select Language", "English", "Arabic"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +111,43 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedLang = adapterView.getItemAtPosition(i).toString();
+
+                if (selectedLang.equals("English")){
+                    setLocal(UserDashboardActivity.this, "en");
+                    finish();
+                    startActivity(getIntent());
+                }else if(selectedLang.equals("Arabic")){
+                    setLocal(UserDashboardActivity.this, "ar");
+                    finish();
+                    startActivity(getIntent());
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+    }
+
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 
     private void initViews() {
