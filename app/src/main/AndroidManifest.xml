@@ -29,9 +29,6 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon, android:allowBackup">
         <activity
-            android:name=".User.testjason"
-            android:exported="false" />
-        <activity
             android:name=".User.CurrencyActivity"
             android:exported="false" />
         <activity
