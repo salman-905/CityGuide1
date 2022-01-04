@@ -194,10 +194,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
                 break;
-            case R.id.nav_add_missing_place :
-                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
-                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
-                break;
+//            case R.id.nav_add_missing_place :
+//                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
+//                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
+//                break;
             case R.id.nav_currency :
                 startActivity(new Intent(UserDashboardActivity.this, CurrencyActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
