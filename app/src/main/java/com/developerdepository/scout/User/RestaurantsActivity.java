@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.developerdepository.scout.R;
@@ -15,8 +16,7 @@ import com.developerdepository.scout.R;
 public class RestaurantsActivity extends AppCompatActivity {
 
     ConstraintLayout image1, image2, image3, image4, image5, image6, image7, image8, image9, image10;
-
-
+    ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,14 @@ public class RestaurantsActivity extends AppCompatActivity {
         image8= findViewById(R.id.category8);
         image9= findViewById(R.id.category9);
         image10= findViewById(R.id.category10);
+
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         image10.setOnClickListener(new View.OnClickListener() {
             @Override
