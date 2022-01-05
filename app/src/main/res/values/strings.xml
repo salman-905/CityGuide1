@@ -12,7 +12,9 @@
     <string name="third_slide_title">Add Missing Place</string>
     <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
 
+
     <!-- Descriptions -->
+
     <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
     <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
     <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
@@ -208,5 +210,32 @@
     <string name="alahsa_malldec">It is one of the largest single-storey complexes, characterized by its family atmosphere, and contains many shops, restaurants and cafes .</string>
     <string name="alfawares_mall">AL FAWARES MALL</string>
     <string name="alfawares_malldec">One of the largest malls in Al-Ahsa with an area of ​​30 thousand square meters. It consists of two floors containing many shops and restaurants.</string>
+    <string name="farm_superstores">FARM SUPERSTORES</string>
+    <string name="farm_superstoresdes">Farm Superstores is one of the leading trading, retail and import companies.</string>
+    <string name="alothaim_mall">AL OTHAIM MALL</string>
+    <string name="alothaim_malldec">A place that understands your needs and deserves your journey, an ideal destination for shopping and entertainment.</string>
+    <string name="UqairBeach">Uqair Beach</string>
+    <string name="AlQarah">Al-Qarah Mountain</string>
+    <string name="AlAsfar">Al-Asfar Lake</string>
+    <string name="JawathaCity">Jawatha City</string>
+    <string name="AlArbaa">Al-Arbaa Mountain</string>
+    <string name="AlShu">Al-Shu\'ba Mountain</string>
+    <string name="KingAbdullahPark">King Abdullah Park</string>
+    <string name="ZooPark">Zoo Park</string>
+    <string name="aluqairdec">Uqair Beach is the best rated Beach in Al-Ahsa\'a at the moment.</string>
+    <string name="alqaradec">From the breathtaking summit of Al Qarah Mountain, Arabic translations of the surrounding region’s place names bring new meaning.</string>
+    <string name="alasfardec">Al-Asfar Lake is a lake located in Al-Omran east of Al-Ahsa in Saudi Arabia. It is considered the largest watershed in the Gulf region, and it is the only one in the Kingdom of its kind in which an integrated wildlife lives.</string>
+    <string name="jawadec">The city of Jawatha is a historic treasure of the Kingdom, because it was once a palace or fortress used by Abd al-Qays, Bahrain. It was mentioned in the Book of the Status of the Arabian Island, settled by nations for the rich eyes and fertility of its agricultural soil.</string>
+    <string name="alarbadec">Jabal Al-Arbaa is a wonderful rock formation located in south Al-Hofuf and is one of the well-known group of mountains in Al-Ahsa. It is named after its four conical shaped plateaus, two joined together and the other two separate from each other.</string>
+    <string name="alshudec">Al-Shu\'ba mountain located in east of Al-Shu\'ba village at Al-Ahsa and to the north of Al-Eskan next to the road leading from eastern villages to the northern villages and to Al-Dammam.</string>
+    <string name="kingabdudec">Located in the southern part of Al Hofuf, King Abdullah Environmental Park is one of the best amusement options in this region.</string>
+    <string name="zoodec">Al-Tharf Model Garden or Al-Ahsa Zoo is a park that includes many animals located in Al-Ahsa Governorate in the Eastern Province of Saudi Arabia. The park is also one of Al-Ahsa’s tourist attractions.</string>
+    <string name="HouseAllegiance">House of Allegiance</string>
+    <string name="IbrahimPalace">Ibrahim Palace</string>
+    <string name="SahoodFort">"Sahood Fort "</string>
+    <string name="OldAlUqayrSeaport">Old AlUqayrSeaport</string>
+    <string name="PrincesSchool">Princes School</string>
+    <string name="MuhairisPalace">Muhairis Palace</string>
+    <string name="KhuzamPalace">"Khuzam Palace "</string>
 
 </resources>

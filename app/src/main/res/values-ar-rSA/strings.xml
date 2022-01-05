@@ -208,6 +208,33 @@
     <string name="alahsa_malldec">هو مجمع تجاري يحتوي على العديد من الأنشطة التجارية الحديثة,اضافةً الى السينما , يوجد ايضاً على عدد من المطاعم والكافيهات .</string>
     <string name="alfawares_mall">الفوارس مول</string>
     <string name="alfawares_malldec">مجمع تجاري يحتوي على اماكن تجارية متعددة يتميز المجمع بأنه يقع بين الهفوف والمبرز.</string>
+    <string name="farm_superstores">اسواق المزرعة </string>
+    <string name="farm_superstoresdes">اسواق المزرعة سوق تمويني للمواد الغذائية المواد الضرورية.</string>
+    <string name="alothaim_mall">العثيم مول</string>
+    <string name="alothaim_malldec">مجمع العثيم يعد واحد من سلسلة مجمعات العثيم في المملكة العربية السعودية ويعد اكبر مجمع في منطقة الاحساء.</string>
+    <string name="UqairBeach">" شاطئ العقير"</string>
+    <string name="AlQarah">جبل القارة</string>
+    <string name="AlAsfar">بحيرة الاصفر</string>
+    <string name="JawathaCity">مدينة جواثـا</string>
+    <string name="AlArbaa">جبل الاربع</string>
+    <string name="AlShu">جبل الشعبة</string>
+    <string name="KingAbdullahPark">حديقة الملك عبدالله</string>
+    <string name="ZooPark">حديقة الحيوان</string>
+    <string name="alasfardec">بحيرة الاصفر هي بحيرة تقع بين كثبان رملية حيث تتجلى فيها قدرة الخالق عز وجل منظر خلاب يجلب انظار المرتادين.</string>
+    <string name="alshudec">جبل الشعبة هو جبل يقع على الطريق الممتد من الاحساء الى الدمام وله تشكيل حجري جميل يلفت الناظرين.</string>
+    <string name="zoodec">حديقة حيوانات تقع في الطرف في مدينة الاحساء تحتوي على العديد من الحيوانات.</string>
+    <string name="aluqairdec">شاطئ العقير يعد من احد اهم الشواطئ في المملكة العربية السعودية حيث يوجد فيه اقدم ميناء في المملكة وله مكانة تاريخية ويعد وجهة سياحية لاهالي المنطقة.</string>
+    <string name="alqaradec">جبل القارة احد المعالم السياحية المهمة في منطقة الخليج وتنفرد فيه مدينة الاحساء هناك ستكتشف الكثير من الاسرار المذهلة عن الطبيعة.</string>
+    <string name="jawadec">مدينة جواثة وجهة سياحية ترفيهية للعائلات .</string>
+    <string name="alarbadec">"تتميز جبال الاربع التشكيل الحجري الغريب حيث لها منظر خلاب هنالك يتجه الكثير من السياح لقضاء يوم صحرواي. "</string>
+    <string name="kingabdudec">حديقة الملك عبدالله (رحمه الله) تقع في مدينة الهفوف وتعتبر وجهة ترفيهية للعائلات.</string>
+    <string name="HouseAllegiance">بيت البيعة</string>
+    <string name="IbrahimPalace">قصر ابراهيم</string>
+    <string name="SahoodFort">حصن صاهود</string>
+    <string name="OldAlUqayrSeaport">ميناء العقير التاريخي</string>
+    <string name="PrincesSchool">المدرسة الاميرية</string>
+    <string name="MuhairisPalace">قصر محيرس</string>
+    <string name="KhuzamPalace">قصر خزام</string>
 
 
 </resources>
