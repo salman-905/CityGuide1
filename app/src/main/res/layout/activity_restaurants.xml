@@ -7,40 +7,38 @@
     android:layout_height="match_parent"
     android:background="@color/lightWhite"
     tools:context=".User.AllCategoriesActivity">
-
+<!--    CANGE-->
     <ImageButton
         android:id="@+id/back_arrow_btn"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
+        app:tint="@android:color/black"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_back_arrow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@android:color/black"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/search_btn"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="12dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@android:color/black"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/search_btn"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="12dp"-->
+<!--        android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:src="@drawable/ic_search"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tint="@android:color/black"-->
+<!--        tools:ignore="SpeakableTextPresentCheck"-->
+<!--        android:contentDescription="@string/todo" />-->
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"
@@ -69,7 +67,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:includeFontPadding="false"
-                android:text="@string/restaurents"
+                android:text="@string/restaurants"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
@@ -168,7 +166,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Hasa Gril"
+                        android:text="@string/hasa_gril"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -225,7 +223,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="AL-Keet"
+                        android:text="@string/al_keet"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -282,7 +280,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Casa Pasta"
+                        android:text="@string/casa_pasta"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -339,7 +337,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Lava"
+                        android:text="@string/lava"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -372,7 +370,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardBackgroundColor="#ff6d0d"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="8dp"
                 app:cardPreventCornerOverlap="true"
@@ -396,7 +394,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Dunkin Dounet"
+                        android:text="@string/dunkin"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"

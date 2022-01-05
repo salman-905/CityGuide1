@@ -29,9 +29,6 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon, android:allowBackup">
         <activity
-            android:name=".User.testjason"
-            android:exported="false" />
-        <activity
             android:name=".User.CurrencyActivity"
             android:exported="false" />
         <activity
@@ -60,7 +57,8 @@
         <activity android:name=".User.AllCategoriesActivity" />
         <activity android:name=".Common.OnBoardingActivity" />
         <activity android:name=".User.UserDashboardActivity" />
-        <activity android:name=".Common.SplashScreenActivity">
+        <activity android:name=".Common.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

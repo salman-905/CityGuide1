@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.developerdepository.scout.R;
@@ -14,11 +16,14 @@ import com.developerdepository.scout.R;
 public class RestaurantsActivity extends AppCompatActivity {
 
     ConstraintLayout image1, image2, image3, image4, image5, image6, image7, image8, image9, image10;
-
-
+    ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //StatusBar Color
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.dashboard_background));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurants);
         image1= findViewById(R.id.category1);
@@ -31,6 +36,14 @@ public class RestaurantsActivity extends AppCompatActivity {
         image8= findViewById(R.id.category8);
         image9= findViewById(R.id.category9);
         image10= findViewById(R.id.category10);
+
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         image10.setOnClickListener(new View.OnClickListener() {
             @Override

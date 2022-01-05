@@ -1,169 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SCOUT</string>
-    <string name="app_slogan" >مساعدة </string>
-    <string name="app_powered_by1" > مطور من قبل</string>
-    <string name="app_powered_by2" translatable="false">Developer Depository</string>
-
-    <!-- Strings for OnBoardingScreen -->
-
-    <!-- Titles -->
-    <string name="first_slide_title">Search Your Location</string>
-    <string name="second_slide_title" translatable="false">Make A Call</string>
-    <string name="third_slide_title" >اضافة </string>
-    <string name="fourth_slide_title" >Sit Back &amp; Enjoy</string>
-
-    <!-- Descriptions -->
-    <string name="first_slide_desc" translatable="false">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
-    <string name="second_slide_desc" translatable="false">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
-    <string name="third_slide_desc" translatable="false">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
-    <string name="fourth_slide_desc" translatable="false">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
-
-    <!-- Buttons -->
-    <string name="skip_btn" translatable="false">SKIP</string>
-    <string name="next_btn">NEXT</string>
-    <string name="lets_get_started" translatable="false">LET\'S GET STARTED</string>
-
+    <string name="app_name">Alahsa Tour</string>
 
     <!-- Categories -->
-    <string name="hotels" translatable="true">Hotels</string>
-    <string name="restaurants" translatable="false">Restaurants</string>
-    <string name="shops" translatable="false">Shops</string>
-    <string name="banks" translatable="false">Banks</string>
-    <string name="education">Education</string>
-    <string name="hospitals">Hospitals</string>
-    <string name="airports">Airports</string>
-    <string name="sports">Sports</string>
-    <string name="travel" translatable="false">Travel</string>
-    <string name="carRent" translatable="false">Car Rent</string>
-
-
-    <!-- Strings for Dashboard -->
-
-    <!-- Titles and Descriptions -->
-    <string name="featured_locations" translatable="false">All\nFeatured\nLocations</string>
-    <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
-    <string name="most_viewed_locations" translatable="false">Most Viewed</string>
-    <string name="categories">Categories</string>
-    <string name="view_all" translatable="false">View All</string>
-    <string name="search_text">Search a location</string>
-
-    <!-- Featured Locations Card Defaults -->
-    <string name="featured_item_placeholder_title" translatable="false">ScrapYard</string>
-    <string name="featured_item_placeholder_desc" translatable="false">ScrapYard is the best rated restaurant in the location at the moment.</string>
-
-    <!-- Most Viewed Locations Card Defaults -->
-    <string name="most_viewed_item_placeholder_title" translatable="false">Chapter7</string>
-    <string name="most_viewed_item_placeholder_desc" translatable="false">Chapter7 is the best rated club in the location at the moment.</string>
-
-    <!-- Strings for Navigation Menu -->
-    <string name="navHome" translatable="false">Home</string>
-    <string name="navSearch" translatable="false">Search</string>
-    <string name="navAllCategories" translatable="false">All Categories</string>
-    <string name="navAddMissingPlaces" translatable="false">Add Missing Place</string>
-    <string name="navCurrency" translatable="false">Exchange Currency</string>
-    <string name="navProfileTitle" translatable="false">Profile</string>
-    <string name="navLogin">Log In</string>
-    <string name="navProfile" translatable="false">Profile</string>
-    <string name="navLogOut" translatable="false">Log Out</string>
-    <string name="navCategoriesTitle" translatable="false">Categories</string>
-    <string name="navRestaurants" translatable="false">Restaurants</string>
-    <string name="navHotels" translatable="false">Hotels</string>
-    <string name="navEducation" translatable="false">Education</string>
-    <string name="navShops" translatable="false">Shops</string>
-    <string name="navCommunicationTitle" translatable="false">Communication</string>
-    <string name="navShare" translatable="false">Share</string>
-    <string name="navRateUs" translatable="false">Rate Us</string>
-    <string name="navContactUs" translatable="false">Contact Us</string>
-    <string name="navAboutUs" translatable="false">About Us</string>
-    <string name="navPrivacyPolicy" translatable="false">Privacy Policy</string>
-
-    <!-- Exit Dialog Strings -->
-    <string name="exitDialogTitle" translatable="false">Exit SCOUT?</string>
-    <string name="exitDialogMessage" translatable="false">Do you really want to exit?</string>
-    <string name="exitDialogConfirm" translatable="false">YES</string>
-    <string name="exitDialogCancel" translatable="false">NO</string>
-
-
-    <!-- All Categories Strings -->
-    <string name="allCategoriesTitle" translatable="false">All Categories</string>
-
-
-    <!-- Retailer StartUp Screen Strings -->
-    <string name="retailerStartUpTitle" translatable="false">GROW YOUR BUSINESS</string>
-    <string name="retailerStartUpMessage" translatable="false">SCOUT will help you grow your business and gain reach by taking it online.</string>
-    <string name="retailerStartUpLoginBtn" translatable="false">LOGIN</string>
-    <string name="retailerStartUpSignUpBtn" translatable="false">SIGN UP</string>
-    <string name="retailerStartUpHowWeWork" translatable="false">How We Work?</string>
-
-
-    <!-- RetailerLogin Strings -->
-    <string name="retailerLoginTitle" translatable="false">LOGIN</string>
-    <string name="retailerLoginMessage" translatable="false">Sign in to continue!</string>
-    <string name="retailerLoginUsernameHint" translatable="false">Username</string>
-    <string name="retailerLoginPasswordHint" translatable="false">Password</string>
-    <string name="retailerLoginRememberMeCheckBox" translatable="false">Remember Me</string>
-    <string name="retailerLoginForgotPassword" translatable="false">Forgot Password?</string>
-    <string name="retailerLoginBtn" translatable="false">LOGIN</string>
-    <string name="retailerLoginCreateAccountMsg" translatable="false">Don\'t have an account?</string>
-    <string name="retailerLoginCreateAccountBtn" translatable="false">Create Account</string>
-
-
-    <!-- RetailerSignUp Strings -->
-    <string name="retailerSignUpTitle" translatable="false">Create Account</string>
-    <string name="retailerSignUpMessage" translatable="false">Sign up to get started!</string>
-    <string name="retailerSignUpNameHint" translatable="false">Name</string>
-    <string name="retailerSignUpUserNameHint" translatable="false">Username</string>
-    <string name="retailerSignUpEmailHint" translatable="false">Email</string>
-    <string name="retailerSignUpMobileHint" translatable="false">Mobile</string>
-    <string name="retailerSignUpCreatePasswordHint" translatable="false">Create Password</string>
-    <string name="retailerSignUpConfirmPasswordHint" translatable="false">Confirm Password</string>
-    <string name="retailerSignUpNextBtn" translatable="false">NEXT</string>
-    <string name="retailerSignUpLoginMsg" translatable="false">Already have an account?</string>
-    <string name="retailerSignUpLoginBtn" translatable="false">Sign in</string>
-    <string name="retailerSignUpChooseGenderTxt" translatable="false">Choose Gender</string>
-    <string name="retailerSignUpMale" translatable="false">Male</string>
-    <string name="retailerSignUpFemale" translatable="false">Female</string>
-    <string name="retailerSignUpOther" translatable="false">Other</string>
-    <string name="retailerSignUpDOBTxt" translatable="false">Select Date of Birth</string>
-    <string name="retailerSignUpMobileMsg" translatable="false">A 6-digit verification code will be sent to the mobile number. Standard rates may apply.</string>
-
-
-    <!-- Retailer VerifyOTP Strings -->
-    <string name="verifyOTPTitle" translatable="false">CODE VERIFICATION</string>
-    <string name="verifyOTPMessage" translatable="false">Enter the verification code sent to\n+919915462971</string>
-    <string name="verifyOTPBtn" translatable="false">VERIFY</string>
-
-
-    <!-- Retailer Forgot Password Strings -->
-    <string name="forgotPasswordTitle" translatable="false">FORGOT PASSWORD?</string>
-    <string name="forgotPasswordMessage" translatable="false">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
-    <string name="forgotPasswordMobileHint" translatable="false">Mobile</string>
-    <string name="forgotPasswordNextBtn" translatable="false">NEXT</string>
-
-
-    <!-- Retailer Make Selection Strings -->
-    <string name="makeSelectionTitle" translatable="false">MAKE\nSELECTION</string>
-    <string name="makeSelectionMsg" translatable="false">Select what contact detail should we be using to reset your password?!</string>
-    <string name="makeSelectionViaSmsTitle" translatable="false">via sms :</string>
-    <string name="makeSelectionViaSmsValueDefault" translatable="false">+919915462971</string>
-    <string name="makeSelectionViaEmailTitle" translatable="false">via mail :</string>
-    <string name="makeSelectionViaEmailValueDefault" translatable="false">developer.depository@gmail.com</string>
-
-
-    <!-- Retailer Set New Password Strings -->
-    <string name="setNewPasswordTitle" translatable="false">NEW CREDENTIALS</string>
-    <string name="setNewPasswordMsg" translatable="false">Your identity has been verified.\nSet your new password.</string>
-    <string name="setNewPasswordHint" translatable="false">New Password</string>
-    <string name="confirmNewPasswordHint" translatable="false">Confirm Password</string>
-    <string name="updatePasswordBtn" translatable="false">UPDATE</string>
-
-
-    <!-- Password Success Message Strings -->
-    <string name="setPasswordSuccessTitle" translatable="false">PASSWORD UPDATED</string>
-    <string name="setPasswordSuccessMsg" translatable="false">Your password has been updated!</string>
-    <string name="setPasswordSuccessLoginBtn" translatable="false">LOGIN</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="Hotel" translatable="false" />
-    <string name="Convert"> convert </string>
+    <string name="hotels">الفنادق</string>
+    <string name="restaurants">المطاعم</string>
+    <string name="shops">الاسواق</string>
+    <string name="banks">البنوك</string>
+    <string name="education">التعليم</string>
+    <string name="hospitals">المستشفيات</string>
+    <string name="airports">المطار</string>
+    <string name="sports">الرياضة</string>
+    <string name="travel">السفر</string>
+    <string name="carRent">تأجير السيارات</string>
+    <string name="hotel">Hotel</string>
+    <string name="triple_tree_hotel">Triple Tree hotel</string>
 </resources>

@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="@color/lightWhite"
     tools:context=".User.AllCategoriesActivity">
-
+<!--CHANGE-->
 
     <ImageButton
         android:id="@+id/back_arrow_btn"
@@ -26,20 +26,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/search_btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="24dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:clickable="true"
-        android:focusable="true"
-        app:tint="@android:color/black"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/search_btn"-->
+<!--        android:layout_width="32dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginEnd="12dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        app:tint="@android:color/black"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:src="@drawable/ic_search"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"
@@ -65,7 +65,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Hotel"
+                android:text="@string/hotel"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"
@@ -107,7 +107,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Triple Tree hotel"
+                        android:text="@string/triple_tree_hotel"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/black"
@@ -166,7 +166,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="SomeWhere hotel "
+                        android:text="@string/somewhere_hotel"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -224,7 +224,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Intercontinental al ahssa hotel"
+                        android:text="@string/intercontinental_hotel"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -282,7 +282,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Al ahssa Grand "
+                        android:text="@string/alahssa_grand"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -340,7 +340,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Coral hotel"
+                        android:text="@string/coral_hotel"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -398,7 +398,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Separ Furnished Hotel"
+                        android:text="@string/separ_hotel"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -456,7 +456,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Taleen hotel"
+                        android:text="@string/taleen_hotel"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -513,7 +513,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Garden Plaza hotel"
+                        android:text="@string/garden_hotel"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -571,7 +571,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Homes Linh hotel"
+                        android:text="@string/linh_hotel"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
@@ -631,7 +631,7 @@
                         android:layout_marginBottom="24dp"
                         android:fontFamily="@font/poppins_medium"
                         android:includeFontPadding="false"
-                        android:text="Al Kut hotel"
+                        android:text="@string/alkut_hotel"
                         android:textAlignment="textEnd"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"

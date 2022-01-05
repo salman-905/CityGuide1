@@ -7,17 +7,33 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import com.developerdepository.scout.R;
 
 public class ShopsActivity extends AppCompatActivity {
 
     ConstraintLayout s1, s2,s3,s4,s5,s6,s7;
+    ImageButton backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //StatusBar Color
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.dashboard_background));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shops);
+
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         s1 = findViewById(R.id.most_viewed_location_itemm);
         s1.setOnClickListener(new View.OnClickListener() {

@@ -1,13 +1,5 @@
 package com.developerdepository.scout.User;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -16,15 +8,26 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.developerdepository.scout.Common.LoginSignup.RetailerStartUpScreenActivity;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.CategoriesAdapter;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.CategoriesModel;
-import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedModel;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedLocationsAdapter;
+import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedModel;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.MostViewedLocationsAdapter;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.MostViewedModel;
 import com.developerdepository.scout.R;
@@ -53,6 +56,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     //Other Variables
     private RecyclerView.Adapter featuredAdapter, mostViewedAdapter, categoriesAdapter;
     private static final float END_SCALE = 0.8f;
+
+    Spinner spinner;
+    public static final String[] languages = {"Select Language", "English", "Arabic"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +112,43 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
+        spinner = findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selectedLang = adapterView.getItemAtPosition(i).toString();
+
+                if (selectedLang.equals("English")){
+                    setLocal(UserDashboardActivity.this, "en");
+                    finish();
+                    startActivity(getIntent());
+                }else if(selectedLang.equals("Arabic")){
+                    setLocal(UserDashboardActivity.this, "ar");
+                    finish();
+                    startActivity(getIntent());
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+    }
+
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 
     private void initViews() {
@@ -151,10 +194,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
                 break;
-            case R.id.nav_add_missing_place :
-                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
-                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
-                break;
+//            case R.id.nav_add_missing_place :
+//                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
+//                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
+//                break;
             case R.id.nav_currency :
                 startActivity(new Intent(UserDashboardActivity.this, CurrencyActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
@@ -213,13 +256,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         mostViewedLocations.add(new MostViewedModel(R.drawable.ibrahem, "Ibrahim Palace", "The Ibrahim Palace was built during the time of the first Saudi state and is considered to be an architectural masterpiece.",  4.2, "https://goo.gl/maps/d46xCcZon2Au4cLW9"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.sahoood, "Sahood Fort ", "Sahood Fort is situated outside the western walls of Al Mubarraz, Saudi Arabia. The fort is used as barracks for the Saudi Arabian Armed Forces.",  4.0, "https://goo.gl/maps/7sE3UNmeVwJRtrh89"));
         mostViewedLocations.add(new MostViewedModel(R.drawable.muqair, "Old Al Uqayr Seaport", "Uqair is the site of numerous historic meetings between the founding king and foreign diplomats and the place in which he conducted negotiations with international political forces in the region.",  4.3, "https://goo.gl/maps/BDwqm4NjFLkApL397"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "The Amiri School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941 AD",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
-
-
+        mostViewedLocations.add(new MostViewedModel(R.drawable.school, "Princes School", "The Princes School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941.",  4.4, "https://goo.gl/maps/zziZ2NVQ24hA5uFV9"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.mehers, "Muhairis Palace", "Muhairis Palace is a palace built by Imam Saud bin Abdul Aziz on the top of a hill in 1208 AH for military purposes.",  3.5, "https://goo.gl/maps/pAWeGE75s8JaXH5T6"));
+        mostViewedLocations.add(new MostViewedModel(R.drawable.khusam, "Khuzam Palace ", "Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.",  2.5, "https://goo.gl/maps/8QXrya6cbGwX6oKm8"));
 
         mostViewedAdapter = new MostViewedLocationsAdapter(mostViewedLocations);
 
@@ -233,11 +272,11 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         ArrayList<CategoriesModel> categories = new ArrayList<>();
 
-        categories.add(new CategoriesModel(R.color.card2, R.drawable.illustration_shopping, "Shopping"));
-        categories.add(new CategoriesModel(R.color.card5, R.drawable.illustration_restaurant, "Restaurants"));
-        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hospital, "Hospitals"));
-        categories.add(new CategoriesModel(R.color.card1, R.drawable.illustration_education, "Education"));
-        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, "Travel"));
+        categories.add(new CategoriesModel(R.color.card2, R.drawable.illustration_shopping, R.string.navShops));
+        categories.add(new CategoriesModel(R.color.card5, R.drawable.illustration_restaurant, R.string.navRestaurants));
+        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hospital, R.string.navHotels));
+        categories.add(new CategoriesModel(R.color.card1, R.drawable.illustration_education, R.string.navEducation));
+        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, R.string.travel));
 
         categoriesAdapter = new CategoriesAdapter(categories);
 
@@ -287,19 +326,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             materialDialog.show();
         }
     }
-
-
-
-
-    public void setLocal(Activity activity, String langCode){
-        Locale locale = new Locale(langCode);
-        locale.setDefault(locale);
-        Resources resources = activity.getResources();
-        Configuration config = resources.getConfiguration();
-        config.setLocale(locale);
-        resources.updateConfiguration(config, resources.getDisplayMetrics());
-    }
-
 
 
 }
