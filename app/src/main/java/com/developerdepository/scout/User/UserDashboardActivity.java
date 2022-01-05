@@ -141,14 +141,6 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
     }
 
-    public void setLocal(Activity activity, String langCode){
-        Locale locale = new Locale(langCode);
-        locale.setDefault(locale);
-        Resources resources = activity.getResources();
-        Configuration config = resources.getConfiguration();
-        config.setLocale(locale);
-        resources.updateConfiguration(config, resources.getDisplayMetrics());
-    }
 
     private void initViews() {
         //Initialize Views
@@ -186,6 +178,15 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         animateNavigationDrawer();
     }
 
+    public void setLocal(Activity activity, String langCode){
+        Locale locale = new Locale(langCode);
+        locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -201,7 +202,25 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 startActivity(new Intent(UserDashboardActivity.this, CurrencyActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
                 break;
-
+//            case R.id.languages :
+//                setLocal(UserDashboardActivity.this, "ar");
+//                finish();
+//                startActivity(getIntent());
+//                break;
+//            case R.id.languages :
+//                setLocal(UserDashboardActivity.this, "en");
+//                finish();
+//                startActivity(getIntent());
+//                break;
+        }
+        if (item.getItemId() == R.id.languages){
+            setLocal(UserDashboardActivity.this, "en");
+            finish();
+            startActivity(getIntent());
+        }else {
+            setLocal(UserDashboardActivity.this, "ar");
+            finish();
+            startActivity(getIntent());
         }
         return false;
     }
