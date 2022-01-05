@@ -1,13 +1,5 @@
 package com.developerdepository.scout.User;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -23,11 +15,19 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.developerdepository.scout.Common.LoginSignup.RetailerStartUpScreenActivity;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.CategoriesAdapter;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.CategoriesModel;
-import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedModel;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedLocationsAdapter;
+import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.FeaturedModel;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.MostViewedLocationsAdapter;
 import com.developerdepository.scout.HelperClasses.DashboardHelperClasses.MostViewedModel;
 import com.developerdepository.scout.R;
@@ -291,11 +291,11 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         ArrayList<CategoriesModel> categories = new ArrayList<>();
 
-        categories.add(new CategoriesModel(R.color.card2, R.drawable.illustration_shopping, "Shopping"));
-        categories.add(new CategoriesModel(R.color.card5, R.drawable.illustration_restaurant, "Restaurants"));
-        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hospital, "Hospitals"));
-        categories.add(new CategoriesModel(R.color.card1, R.drawable.illustration_education, "Education"));
-        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, "Travel"));
+        categories.add(new CategoriesModel(R.color.card2, R.drawable.illustration_shopping, R.string.navShops));
+        categories.add(new CategoriesModel(R.color.card5, R.drawable.illustration_restaurant, R.string.navRestaurants));
+        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hospital, R.string.navHotels));
+        categories.add(new CategoriesModel(R.color.card1, R.drawable.illustration_education, R.string.navEducation));
+        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, R.string.travel));
 
         categoriesAdapter = new CategoriesAdapter(categories);
 
