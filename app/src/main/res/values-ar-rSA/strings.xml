@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">SCOUT</string>
-    <string name="app_slogan">Helps You Get A Way</string>
-    <string name="app_powered_by1">Powered by</string>
-    <string name="app_powered_by2">Developer Depository</string>
+    <string name="app_name">رحلة الاحساء</string>
+    <string name="app_slogan">من هنا تبدأ رحلتك.</string>
+    <string name="app_powered_by1">انشئ بواسطة</string>
+    <string name="app_powered_by2">فريق صلة</string>
 
     <!-- Strings for OnBoardingScreen -->
 
@@ -21,7 +21,7 @@
     <!-- Buttons -->
     <string name="skip_btn">تخطي</string>
     <string name="next_btn">التالي</string>
-    <string name="lets_get_started">LET\'S GET STARTED</string>
+    <string name="lets_get_started">لنبدأ الرحلة</string>
 
 
     <!-- Categories -->
@@ -40,8 +40,7 @@
     <!-- Strings for Dashboard -->
 
     <!-- Titles and Descriptions -->
-    <string name="featured_locations" translatable="false">All\nFeatured\nLocations</string>
-    <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
+    <string name="featured_locations" translatable="false">هنا معظم\nالاماكن\nالمميزة </string>
     <string name="most_viewed_locations">الاكثر مشاهدة</string>
     <string name="categories">الفئات</string>
     <string name="view_all">مشاهدة الكل</string>
@@ -56,7 +55,7 @@
     <string name="navSearch">بحث</string>
     <string name="navAllCategories">كل الفئات</string>
     <string name="navAddMissingPlaces" translatable="false">Add Missing Place</string>
-    <string name="navCurrency">Exchange Currency</string>
+    <string name="navCurrency">تحويل العملات</string>
     <string name="navProfileTitle" translatable="false">Profile</string>
     <string name="navLogin" translatable="false">Log In</string>
     <string name="navProfile" translatable="false">Profile</string>
@@ -71,11 +70,11 @@
     <string name="navRateUs">قيمنا</string>
     <string name="navContactUs">تواصل معنا</string>
     <string name="navAboutUs">عنا</string>
-    <string name="navPrivacyPolicy" translatable="false">Privacy Policy</string>
+    <string name="navPrivacyPolicy" translatable="false">سياسة الخصوصية</string>
 
     <!-- Exit Dialog Strings -->
-    <string name="exitDialogTitle" translatable="false">Exit SCOUT?</string>
-    <string name="exitDialogMessage">هل تريد الخروج؟</string>
+    <string name="exitDialogTitle" translatable="false">انهاء الجولة ؟</string>
+    <string name="exitDialogMessage">هل انت متأكد؟</string>
     <string name="exitDialogConfirm">نعم</string>
     <string name="exitDialogCancel">لا</string>
 
@@ -113,7 +112,7 @@
     <string name="retailerSignUpMobileHint" translatable="false">Mobile</string>
     <string name="retailerSignUpCreatePasswordHint" translatable="false">Create Password</string>
     <string name="retailerSignUpConfirmPasswordHint" translatable="false">Confirm Password</string>
-    <string name="retailerSignUpNextBtn" translatable="false">NEXT</string>
+    <string name="retailerSignUpNextBtn" translatable="false">التالي</string>
     <string name="retailerSignUpLoginMsg" translatable="false">Already have an account?</string>
     <string name="retailerSignUpLoginBtn" translatable="false">Sign in</string>
     <string name="retailerSignUpChooseGenderTxt" translatable="false">Choose Gender</string>
@@ -134,7 +133,7 @@
     <string name="forgotPasswordTitle" translatable="false">FORGOT PASSWORD?</string>
     <string name="forgotPasswordMessage" translatable="false">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
     <string name="forgotPasswordMobileHint" translatable="false">Mobile</string>
-    <string name="forgotPasswordNextBtn" translatable="false">NEXT</string>
+    <string name="forgotPasswordNextBtn" translatable="false">التالي</string>
 
 
     <!-- Retailer Make Selection Strings -->
@@ -173,4 +172,42 @@
     <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
     <string name="project_id">scout-city-guide</string>
     <string name="google_storage_bucket">scout-city-guide.appspot.com</string>
+    <string name="khaibar">خيبر</string>
+    <string name="topaz">توباز</string>
+    <string name="bharat">بهارات</string>
+    <string name="tendrliune">تيندرلايون</string>
+    <string name="restaurents">المطاعم</string>
+    <string name="horn">هورن</string>
+    <string name="featured_locations_description" translatable="false">هنا الاماكن السياحية الاكثر شهرة في المنطقة حيث تعتبر الاعلى تقيماً والاكثر زيارة.</string>
+    <!-- فنادق-->
+    <string name="hotel">فنادق </string>
+    <string name="triple_tree_hotel">تريبل تري</string>
+    <string name="somewhere_hotel">فندق مكان</string>
+    <string name="intercontinental_hotel">فندق الانتركونتنينتال</string>
+    <string name="alahssa_grand">الاحساء جراند</string>
+    <string name="coral_hotel">فندق كورال</string>
+    <string name="separ_hotel">فندق سيبار </string>
+    <string name="taleen_hotel">فندق تالين</string>
+    <string name="garden_hotel">فندق جاردن بلازا</string>
+    <string name="linh_hotel">فندق لينة</string>
+    <string name="alkut_hotel">فندق الكوت</string>
+    <!-- مطاعم -->
+    <string name="hasa_gril">الاحساء جريل</string>
+    <string name="al_keet">الكيت</string>
+    <string name="casa_pasta">كازاباستا</string>
+    <string name="lava">لاڤــا</string>
+    <string name="dunkin">دانكن دونت</string>
+    <!-- اسواق -->
+    <string name="al_qaysarya">القيصريـة</string>
+    <string name="alqisryahdec">سوق تاريخي انشئ عام 1822م ستجد هناك كل مايتعلق التراث الاحسائي, يقع في مدينة الهفوف. </string>
+    <string name="al_qaria">القرية الشعبية</string>
+    <string name="al_qariadec">القرية الشعبية سوق انشئ حديث بهوية تراثية يتحوي على اكثر من 1500 نشاط تجاري مختلف بين حديثًا و قديم, يقع في مدينة المبرز. </string>
+    <string name="al_sweeq">السويق</string>
+    <string name="al_sweeqdec">يعد واحد من اشهر الاسواق في المنطقة حيث يتاده الكثيرين من داخل وخارج المملكة, يقع في مدينة الهفوف.</string>
+    <string name="alahsa_mall">الاحساء مول</string>
+    <string name="alahsa_malldec">هو مجمع تجاري يحتوي على العديد من الأنشطة التجارية الحديثة,اضافةً الى السينما , يوجد ايضاً على عدد من المطاعم والكافيهات .</string>
+    <string name="alfawares_mall">الفوارس مول</string>
+    <string name="alfawares_malldec">مجمع تجاري يحتوي على اماكن تجارية متعددة يتميز المجمع بأنه يقع بين الهفوف والمبرز.</string>
+
+
 </resources>
