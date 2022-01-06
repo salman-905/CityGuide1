@@ -111,36 +111,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
-        spinner = findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, languages);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setSelection(0);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String selectedLang = adapterView.getItemAtPosition(i).toString();
-
-                if (selectedLang.equals("English")){
-                    setLocal(UserDashboardActivity.this, "en");
-                    finish();
-                    startActivity(getIntent());
-                }else if(selectedLang.equals("Arabic")){
-                    setLocal(UserDashboardActivity.this, "ar");
-                    finish();
-                    startActivity(getIntent());
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
     }
-
 
     private void initViews() {
         //Initialize Views
@@ -152,12 +123,11 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         //Dashboard Views
         contentView = findViewById(R.id.content_view);
         dashboardMenu = findViewById(R.id.dashboard_menu);
-        addPlacesBtn = findViewById(R.id.add_places_btn);
+//        addPlacesBtn = findViewById(R.id.add_places_btn);
         featuredRecycler = findViewById(R.id.featured_locations_recycler);
         mostViewedRecycler = findViewById(R.id.most_viewed_locations_recycler);
         categoriesRecycler = findViewById(R.id.categories_recycler);
         categoriesViewAll = findViewById(R.id.categories_view_all);
-
 
     }
 
@@ -194,34 +164,18 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
                 break;
-//            case R.id.nav_add_missing_place :
-//                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
-//                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
-//                break;
             case R.id.nav_currency :
                 startActivity(new Intent(UserDashboardActivity.this, CurrencyActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
                 break;
-//            case R.id.languages :
-//                setLocal(UserDashboardActivity.this, "ar");
-//                finish();
-//                startActivity(getIntent());
-//                break;
-//            case R.id.languages :
-//                setLocal(UserDashboardActivity.this, "en");
-//                finish();
-//                startActivity(getIntent());
-//                break;
         }
-        if (item.getItemId() == R.id.languages){
+        if (item.getItemId() == R.id.languages && getString(R.string.lang).equals("English")){
             setLocal(UserDashboardActivity.this, "en");
-            finish();
-            startActivity(getIntent());
-        }else {
+        }else if (item.getItemId() == R.id.languages && getString(R.string.lang).equals("اللغة العربية")){
             setLocal(UserDashboardActivity.this, "ar");
-            finish();
-            startActivity(getIntent());
         }
+        finish();
+        startActivity(getIntent());
         return false;
     }
 
@@ -313,13 +267,13 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             }
         });
 
-        addPlacesBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
-                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
-            }
-        });
+//        addPlacesBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(UserDashboardActivity.this, RetailerStartUpScreenActivity.class));
+//                CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
+//            }
+//        });
     }
 
     @Override
