@@ -171,11 +171,14 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         }
         if (item.getItemId() == R.id.languages && getString(R.string.lang).equals("English")){
             setLocal(UserDashboardActivity.this, "en");
+            finish();
+            startActivity(getIntent());
         }else if (item.getItemId() == R.id.languages && getString(R.string.lang).equals("اللغة العربية")){
             setLocal(UserDashboardActivity.this, "ar");
+            finish();
+            startActivity(getIntent());
         }
-        finish();
-        startActivity(getIntent());
+
         return false;
     }
 
