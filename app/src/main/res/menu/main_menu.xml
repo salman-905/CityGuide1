@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
 
@@ -152,6 +153,22 @@
                     android:orderInCategory="1900"/>
 
             </group>
+
+        </menu>
+    </item>
+
+    <item android:title="@string/languages"
+        android:orderInCategory="1400">
+
+        <menu>
+
+            <item
+                android:id="@+id/languages"
+                android:title="@string/lang"
+                android:icon="@drawable/ic_menu_share"
+                android:iconTint="@android:color/black"
+                android:orderInCategory="1500"/>
+
 
         </menu>
     </item>
