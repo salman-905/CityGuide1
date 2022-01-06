@@ -1,13 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SCOUT</string>
-    <string name="first_slide_title">ابحث عن الموقع</string>
+    <string name="app_slogan">Helps You Get A Way</string>
+    <string name="app_powered_by1">Powered by</string>
+    <string name="app_powered_by2">Developer Depository</string>
+
+    <!-- Strings for OnBoardingScreen -->
+
+    <!-- Titles -->
+    <string name="first_slide_title">Search Your Location</string>
+    <string name="second_slide_title">Make A Call</string>
+    <string name="third_slide_title">Add Missing Place</string>
+    <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
+
+    <!-- Descriptions -->
+    <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
+    <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
+    <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
+    <string name="fourth_slide_desc">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
+
+    <!-- Buttons -->
     <string name="skip_btn">تخطي</string>
     <string name="next_btn">التالي</string>
-    <string name="lets_get_started">لنبدأ</string>
+    <string name="lets_get_started">LET\'S GET STARTED</string>
+
+
+    <!-- Categories -->
     <string name="hotels">الفنادق</string>
-    <string name="restaurants" translatable="false">المطاعم</string>
-    <string name="shops">السوق</string>
+    <string name="restaurants">المطاعم</string>
+    <string name="shops">الاسواق</string>
     <string name="banks">البنوك</string>
     <string name="education">التعليم</string>
     <string name="hospitals">المستشفيات</string>
@@ -15,37 +35,86 @@
     <string name="sports">الرياضة</string>
     <string name="travel">السفر</string>
     <string name="carRent">تأجير السيارات</string>
+
+
+    <!-- Strings for Dashboard -->
+
+    <!-- Titles and Descriptions -->
+    <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
     <string name="most_viewed_locations">الاكثر مشاهدة</string>
     <string name="categories">الفئات</string>
-    <string name="view_all" translatable="false">مشاهدة الكل</string>
+    <string name="view_all">مشاهدة الكل</string>
     <string name="search_text">ابحث عن موقع</string>
+
+    <!-- Featured Locations Card Defaults -->
+
+    <!-- Most Viewed Locations Card Defaults -->
+
+    <!-- Strings for Navigation Menu -->
     <string name="navHome">الرئيسية</string>
-    <string name="navSearch">البحث</string>
-    <string name="navAllCategories" translatable="false">كل الفئات</string>
-    <string name="navCurrency">تبادل العملات</string>
+    <string name="navSearch">بحث</string>
+    <string name="navAllCategories">كل الفئات</string>
+    <string name="navCurrency">Exchange Currency</string>
     <string name="navCategoriesTitle">الفئات</string>
     <string name="navRestaurants">المطاعم</string>
     <string name="navHotels">الفنادق</string>
     <string name="navEducation">التعليم</string>
-    <string name="navShops">السوق</string>
-    <string name="navCommunicationTitle">التوصل</string>
+    <string name="navShops">الاسواق</string>
+    <string name="navCommunicationTitle">التواصل</string>
     <string name="navShare">مشاركة</string>
     <string name="navRateUs">قيمنا</string>
     <string name="navContactUs">تواصل معنا</string>
     <string name="navAboutUs">عنا</string>
+
+    <!-- Exit Dialog Strings -->
     <string name="exitDialogMessage">هل تريد الخروج؟</string>
     <string name="exitDialogConfirm">نعم</string>
     <string name="exitDialogCancel">لا</string>
-    <string name="allCategoriesTitle">جميع الفئات</string>
+
+
+    <!-- All Categories Strings -->
+    <string name="allCategoriesTitle">كل الفئات</string>
+
+
+    <!-- Retailer StartUp Screen Strings -->
+
+
+    <!-- RetailerLogin Strings -->
+
+
+    <!-- RetailerSignUp Strings -->
+
+
+    <!-- Retailer VerifyOTP Strings -->
+
+
+    <!-- Retailer Forgot Password Strings -->
+
+
+    <!-- Retailer Make Selection Strings -->
+
+
+    <!-- Retailer Set New Password Strings -->
+
+
+    <!-- Password Success Message Strings -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="select_lang">اختر لغة</string>
-    <string name="king_faisal_university">جامعة الملك فيصل</string>
-    <string name="imam_muhammad_bin_saud_islamic_university">جامعة الامام محمد بن سعود الاسلامية</string>
-    <string name="king_suad_university">جامعة الملك سعود للعلوم الصحية</string>
-    <string name="arab_open_university">جامعة العربية المفتوحة</string>
-    <string name="national_industrial_training_institute">المعهد الوطني للتدريب الصناعي</string>
+    <string name="king_faisal_university">جامعة الملك فيصل (KFU)</string>
+    <string name="imam_muhammad_bin_saud_islamic_university">جامعة الامام محمد بن سعود</string>
+    <string name="king_suad_university">جامعة الملك سعود</string>
+    <string name="arab_open_university">جامعة العربية المفنوحة</string>
+    <string name="national_industrial_training_institute">المعهد الثانوي الصناعي</string>
     <string name="technical_and_vocational_training_corporation">كلية التقنية</string>
-    <string name="wall_street_english">وول ستريت انجليزي</string>
-    <string name="al_anjal_national_schools">مدارس الانجال</string>
-    <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
     <string name="alkhaleej_training_and_education">معهد الخليج</string>
+    <string name="wall_street_english">معهد وول ستريت</string>
+    <string name="al_anjal_national_schools">مدارس النجاح</string>
+    <string name="future_vision_private_schools">مدارس رؤية المستقبل</string>
+    <string name="horn" translatable="false">هورن</string>
+    <string name="restaurents" translatable="false">مطاعم</string>
+    <string name="khaibar" translatable="false">خيبر</string>
+    <string name="topaz">توباز</string>
+    <string name="languages">اللغة</string>
+    <string name="lang">English</string>
+
 </resources>

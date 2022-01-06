@@ -54,18 +54,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@color/add_places_btn_background"
-                android:padding="4dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_add_places"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@android:color/black" />
+            <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="164dp"
+            android:layout_height="17dp"
+
+            tools:layout_editor_absoluteY="32dp"
+            tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -94,7 +89,7 @@
                     android:layout_height="80dp"
                     android:layout_marginTop="8dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/img_app_logo"
+                    android:src="@drawable/alahsa"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -112,55 +107,55 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/search_btn"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/search_btn"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="?attr/selectableItemBackground"-->
+<!--                        android:clickable="true"-->
+<!--                        android:focusable="true"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
 
-                        <TextView
-                            android:id="@+id/search_text"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="12dp"
-                            android:alpha="0.5"
-                            android:fontFamily="@font/poppins"
-                            android:includeFontPadding="false"
-                            android:text="@string/search_text"
-                            android:textAlignment="textStart"
-                            android:textAllCaps="false"
-                            android:textColor="@android:color/black"
-                            android:textSize="16sp"
-                            android:textStyle="normal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/search_img"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/search_text"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:layout_marginTop="12dp"-->
+<!--                            android:layout_marginEnd="16dp"-->
+<!--                            android:layout_marginBottom="12dp"-->
+<!--                            android:alpha="0.5"-->
+<!--                            android:fontFamily="@font/poppins"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:text="@string/search_text"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="normal"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toStartOf="@+id/search_img"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
 
-                        <ImageView
-                            android:id="@+id/search_img"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="8dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/ic_search"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:tint="@android:color/black" />
+<!--                        <ImageView-->
+<!--                            android:id="@+id/search_img"-->
+<!--                            android:layout_width="24dp"-->
+<!--                            android:layout_height="24dp"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:layout_marginEnd="16dp"-->
+<!--                            android:layout_marginBottom="8dp"-->
+<!--                            android:scaleType="centerInside"-->
+<!--                            android:src="@drawable/ic_search"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:tint="@android:color/black" />-->
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -174,7 +169,7 @@
                     app:cardPreventCornerOverlap="true"
                     app:layout_constraintEnd_toStartOf="@+id/hotel_btn_container"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/search_btn_container">
+                    app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/restaurant_btn"
@@ -213,7 +208,7 @@
                     app:cardPreventCornerOverlap="true"
                     app:layout_constraintEnd_toStartOf="@+id/education_btn_container"
                     app:layout_constraintStart_toEndOf="@+id/restaurant_btn_container"
-                    app:layout_constraintTop_toBottomOf="@+id/search_btn_container">
+                    app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/hotel_btn"
@@ -252,7 +247,7 @@
                     app:cardPreventCornerOverlap="true"
                     app:layout_constraintEnd_toStartOf="@+id/shop_btn_container"
                     app:layout_constraintStart_toEndOf="@+id/hotel_btn_container"
-                    app:layout_constraintTop_toBottomOf="@+id/search_btn_container">
+                    app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/education_btn"
@@ -292,7 +287,7 @@
                     app:cardPreventCornerOverlap="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/education_btn_container"
-                    app:layout_constraintTop_toBottomOf="@+id/search_btn_container">
+                    app:layout_constraintTop_toBottomOf="@+id/app_logo">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/shop_btn"
@@ -499,7 +494,7 @@
                     android:text="@string/view_all"
                     android:textAlignment="textStart"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/green"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/most_viewed_locations_text"
@@ -551,7 +546,7 @@
                     android:text="@string/view_all"
                     android:textAlignment="textStart"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/green"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/categories_text"
@@ -575,6 +570,8 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.core.widget.NestedScrollView>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

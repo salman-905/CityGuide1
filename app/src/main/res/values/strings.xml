@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">SCOUT</string>
+    <string name="app_name">Alahsa Tour</string>
     <string name="app_slogan">Helps You Get A Way</string>
     <string name="app_powered_by1">Powered by</string>
-    <string name="app_powered_by2">Developer Depository</string>
+    <string name="app_powered_by2">Silah Team</string>
 
     <!-- Strings for OnBoardingScreen -->
 
@@ -41,7 +41,7 @@
 
     <!-- Titles and Descriptions -->
     <string name="featured_locations" translatable="false">All\nFeatured\nLocations</string>
-    <string name="featured_locations_description" translatable="false">All the locations that are featured and having the top demand in town at the moment!</string>
+    <string name="featured_locations_description">All the locations that are featured and having the top demand in town at the moment!</string>
     <string name="most_viewed_locations">Most Viewed</string>
     <string name="categories">Categories</string>
     <string name="view_all">View All</string>
@@ -59,12 +59,12 @@
     <string name="navHome">Home</string>
     <string name="navSearch">Search</string>
     <string name="navAllCategories">All Categories</string>
-    <string name="navAddMissingPlaces" translatable="false">Add Missing Place</string>
+    <string name="navAddMissingPlaces">Add Missing Place</string>
     <string name="navCurrency">Exchange Currency</string>
-    <string name="navProfileTitle" translatable="false">Profile</string>
-    <string name="navLogin" translatable="false">Log In</string>
-    <string name="navProfile" translatable="false">Profile</string>
-    <string name="navLogOut" translatable="false">Log Out</string>
+    <string name="navProfileTitle">Profile</string>
+    <string name="navLogin">Log In</string>
+    <string name="navProfile">Profile</string>
+    <string name="navLogOut">Log Out</string>
     <string name="navCategoriesTitle">Categories</string>
     <string name="navRestaurants">Restaurants</string>
     <string name="navHotels">Hotels</string>
@@ -75,10 +75,10 @@
     <string name="navRateUs">Rate Us</string>
     <string name="navContactUs">Contact Us</string>
     <string name="navAboutUs">About Us</string>
-    <string name="navPrivacyPolicy" translatable="false">Privacy Policy</string>
+    <string name="navPrivacyPolicy">Privacy Policy</string>
 
     <!-- Exit Dialog Strings -->
-    <string name="exitDialogTitle" translatable="false">Exit SCOUT?</string>
+    <string name="exitDialogTitle">Exit SCOUT?</string>
     <string name="exitDialogMessage">Do you really want to exit?</string>
     <string name="exitDialogConfirm">YES</string>
     <string name="exitDialogCancel">NO</string>
@@ -89,81 +89,81 @@
 
 
     <!-- Retailer StartUp Screen Strings -->
-    <string name="retailerStartUpTitle" translatable="false">GROW YOUR BUSINESS</string>
-    <string name="retailerStartUpMessage" translatable="false">SCOUT will help you grow your business and gain reach by taking it online.</string>
-    <string name="retailerStartUpLoginBtn" translatable="false">LOGIN</string>
-    <string name="retailerStartUpSignUpBtn" translatable="false">SIGN UP</string>
-    <string name="retailerStartUpHowWeWork" translatable="false">How We Work?</string>
+    <string name="retailerStartUpTitle">GROW YOUR BUSINESS</string>
+    <string name="retailerStartUpMessage">SCOUT will help you grow your business and gain reach by taking it online.</string>
+    <string name="retailerStartUpLoginBtn">LOGIN</string>
+    <string name="retailerStartUpSignUpBtn">SIGN UP</string>
+    <string name="retailerStartUpHowWeWork">How We Work?</string>
 
 
     <!-- RetailerLogin Strings -->
-    <string name="retailerLoginTitle" translatable="false">LOGIN</string>
-    <string name="retailerLoginMessage" translatable="false">Sign in to continue!</string>
-    <string name="retailerLoginUsernameHint" translatable="false">Username</string>
-    <string name="retailerLoginPasswordHint" translatable="false">Password</string>
-    <string name="retailerLoginRememberMeCheckBox" translatable="false">Remember Me</string>
-    <string name="retailerLoginForgotPassword" translatable="false">Forgot Password?</string>
-    <string name="retailerLoginBtn" translatable="false">LOGIN</string>
-    <string name="retailerLoginCreateAccountMsg" translatable="false">Don\'t have an account?</string>
-    <string name="retailerLoginCreateAccountBtn" translatable="false">Create Account</string>
+    <string name="retailerLoginTitle">LOGIN</string>
+    <string name="retailerLoginMessage">Sign in to continue!</string>
+    <string name="retailerLoginUsernameHint">Username</string>
+    <string name="retailerLoginPasswordHint">Password</string>
+    <string name="retailerLoginRememberMeCheckBox">Remember Me</string>
+    <string name="retailerLoginForgotPassword">Forgot Password?</string>
+    <string name="retailerLoginBtn">LOGIN</string>
+    <string name="retailerLoginCreateAccountMsg">Don\'t have an account?</string>
+    <string name="retailerLoginCreateAccountBtn">Create Account</string>
 
 
     <!-- RetailerSignUp Strings -->
-    <string name="retailerSignUpTitle" translatable="false">Create Account</string>
-    <string name="retailerSignUpMessage" translatable="false">Sign up to get started!</string>
-    <string name="retailerSignUpNameHint" translatable="false">Name</string>
-    <string name="retailerSignUpUserNameHint" translatable="false">Username</string>
-    <string name="retailerSignUpEmailHint" translatable="false">Email</string>
-    <string name="retailerSignUpMobileHint" translatable="false">Mobile</string>
-    <string name="retailerSignUpCreatePasswordHint" translatable="false">Create Password</string>
-    <string name="retailerSignUpConfirmPasswordHint" translatable="false">Confirm Password</string>
-    <string name="retailerSignUpNextBtn" translatable="false">NEXT</string>
-    <string name="retailerSignUpLoginMsg" translatable="false">Already have an account?</string>
-    <string name="retailerSignUpLoginBtn" translatable="false">Sign in</string>
-    <string name="retailerSignUpChooseGenderTxt" translatable="false">Choose Gender</string>
-    <string name="retailerSignUpMale" translatable="false">Male</string>
-    <string name="retailerSignUpFemale" translatable="false">Female</string>
-    <string name="retailerSignUpOther" translatable="false">Other</string>
-    <string name="retailerSignUpDOBTxt" translatable="false">Select Date of Birth</string>
-    <string name="retailerSignUpMobileMsg" translatable="false">A 6-digit verification code will be sent to the mobile number. Standard rates may apply.</string>
+    <string name="retailerSignUpTitle">Create Account</string>
+    <string name="retailerSignUpMessage">Sign up to get started!</string>
+    <string name="retailerSignUpNameHint">Name</string>
+    <string name="retailerSignUpUserNameHint">Username</string>
+    <string name="retailerSignUpEmailHint">Email</string>
+    <string name="retailerSignUpMobileHint">Mobile</string>
+    <string name="retailerSignUpCreatePasswordHint">Create Password</string>
+    <string name="retailerSignUpConfirmPasswordHint">Confirm Password</string>
+    <string name="retailerSignUpNextBtn">NEXT</string>
+    <string name="retailerSignUpLoginMsg">Already have an account?</string>
+    <string name="retailerSignUpLoginBtn">Sign in</string>
+    <string name="retailerSignUpChooseGenderTxt">Choose Gender</string>
+    <string name="retailerSignUpMale">Male</string>
+    <string name="retailerSignUpFemale">Female</string>
+    <string name="retailerSignUpOther">Other</string>
+    <string name="retailerSignUpDOBTxt">Select Date of Birth</string>
+    <string name="retailerSignUpMobileMsg">A 6-digit verification code will be sent to the mobile number. Standard rates may apply.</string>
 
 
     <!-- Retailer VerifyOTP Strings -->
-    <string name="verifyOTPTitle" translatable="false">CODE VERIFICATION</string>
-    <string name="verifyOTPMessage" translatable="false">Enter the verification code sent to\n+919915462971</string>
-    <string name="verifyOTPBtn" translatable="false">VERIFY</string>
+    <string name="verifyOTPTitle">CODE VERIFICATION</string>
+    <string name="verifyOTPMessage">Enter the verification code sent to\n+919915462971</string>
+    <string name="verifyOTPBtn">VERIFY</string>
 
 
     <!-- Retailer Forgot Password Strings -->
-    <string name="forgotPasswordTitle" translatable="false">FORGOT PASSWORD?</string>
-    <string name="forgotPasswordMessage" translatable="false">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
-    <string name="forgotPasswordMobileHint" translatable="false">Mobile</string>
-    <string name="forgotPasswordNextBtn" translatable="false">NEXT</string>
+    <string name="forgotPasswordTitle">FORGOT PASSWORD?</string>
+    <string name="forgotPasswordMessage">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
+    <string name="forgotPasswordMobileHint">Mobile</string>
+    <string name="forgotPasswordNextBtn">NEXT</string>
 
 
     <!-- Retailer Make Selection Strings -->
-    <string name="makeSelectionTitle" translatable="false">MAKE\nSELECTION</string>
-    <string name="makeSelectionMsg" translatable="false">Select what contact detail should we be using to reset your password?!</string>
-    <string name="makeSelectionViaSmsTitle" translatable="false">via sms :</string>
-    <string name="makeSelectionViaSmsValueDefault" translatable="false">+919915462971</string>
-    <string name="makeSelectionViaEmailTitle" translatable="false">via mail :</string>
-    <string name="makeSelectionViaEmailValueDefault" translatable="false">developer.depository@gmail.com</string>
+    <string name="makeSelectionTitle">MAKE\nSELECTION</string>
+    <string name="makeSelectionMsg">Select what contact detail should we be using to reset your password?!</string>
+    <string name="makeSelectionViaSmsTitle">via sms :</string>
+    <string name="makeSelectionViaSmsValueDefault">+919915462971</string>
+    <string name="makeSelectionViaEmailTitle">via mail :</string>
+    <string name="makeSelectionViaEmailValueDefault">developer.depository@gmail.com</string>
 
 
     <!-- Retailer Set New Password Strings -->
-    <string name="setNewPasswordTitle" translatable="false">NEW CREDENTIALS</string>
-    <string name="setNewPasswordMsg" translatable="false">Your identity has been verified.\nSet your new password.</string>
-    <string name="setNewPasswordHint" translatable="false">New Password</string>
-    <string name="confirmNewPasswordHint" translatable="false">Confirm Password</string>
-    <string name="updatePasswordBtn" translatable="false">UPDATE</string>
+    <string name="setNewPasswordTitle">NEW CREDENTIALS</string>
+    <string name="setNewPasswordMsg">Your identity has been verified.\nSet your new password.</string>
+    <string name="setNewPasswordHint">New Password</string>
+    <string name="confirmNewPasswordHint">Confirm Password</string>
+    <string name="updatePasswordBtn">UPDATE</string>
 
 
     <!-- Password Success Message Strings -->
-    <string name="setPasswordSuccessTitle" translatable="false">PASSWORD UPDATED</string>
-    <string name="setPasswordSuccessMsg" translatable="false">Your password has been updated!</string>
-    <string name="setPasswordSuccessLoginBtn" translatable="false">LOGIN</string>
+    <string name="setPasswordSuccessTitle">PASSWORD UPDATED</string>
+    <string name="setPasswordSuccessMsg">Your password has been updated!</string>
+    <string name="setPasswordSuccessLoginBtn">LOGIN</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_lang">select language</string>
     <string name="king_faisal_university">King Faisal University (KFU)</string>
     <string name="imam_muhammad_bin_saud_islamic_university">Imam Muhammad Bin Saud Islamic University</string>
@@ -175,4 +175,14 @@
     <string name="wall_street_english">Wall Street English</string>
     <string name="al_anjal_national_schools">Al-anjal National Schools</string>
     <string name="future_vision_private_schools">Future Vision Private Schools</string>
+    <string name="horn">Horn</string>
+    <string name="restaurents">Restaurents</string>
+    <string name="tendrliune" translatable="false">Tendrliune</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="khaibar">Khaibar</string>
+    <string name="topaz">Topaz</string>
+    <string name="bharat" translatable="false">Bharat</string>
+    <string name="languages">Languages</string>
+    <string name="lang">اللغة العربية</string>
+
 </resources>

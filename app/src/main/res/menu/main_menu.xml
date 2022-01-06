@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
 
@@ -7,15 +8,15 @@
             android:id="@+id/nav_home"
             android:title="@string/navHome"
             android:icon="@drawable/ic_menu_dashboard"
-            android:iconTint="@android:color/black"
+            android:iconTint="@color/green"
             android:orderInCategory="100"/>
 
-        <item
-            android:id="@+id/nav_search"
-            android:title="@string/navSearch"
-            android:icon="@drawable/ic_menu_search"
-            android:iconTint="@android:color/black"
-            android:orderInCategory="200"/>
+<!--        <item-->
+<!--            android:id="@+id/nav_search"-->
+<!--            android:title="@string/navSearch"-->
+<!--            android:icon="@drawable/ic_menu_search"-->
+<!--            android:iconTint="@android:color/black"-->
+<!--            android:orderInCategory="200"/>-->
 
         <item
             android:id="@+id/nav_all_categories"
@@ -24,12 +25,12 @@
             android:iconTint="@android:color/black"
             android:orderInCategory="300"/>
 
-        <item
-            android:id="@+id/nav_add_missing_place"
-            android:title="@string/navAddMissingPlaces"
-            android:icon="@drawable/ic_menu_add_places"
-            android:iconTint="@android:color/black"
-            android:orderInCategory="400"/>
+<!--        <item-->
+<!--            android:id="@+id/nav_add_missing_place"-->
+<!--            android:title="@string/navAddMissingPlaces"-->
+<!--            android:icon="@drawable/ic_menu_add_places"-->
+<!--            android:iconTint="@android:color/black"-->
+<!--            android:orderInCategory="400"/>-->
         <item
             android:id="@+id/nav_currency"
             android:title="@string/navCurrency"
@@ -152,6 +153,22 @@
                     android:orderInCategory="1900"/>
 
             </group>
+
+        </menu>
+    </item>
+
+    <item android:title="@string/languages"
+        android:orderInCategory="1400">
+
+        <menu>
+
+            <item
+                android:id="@+id/languages"
+                android:title="@string/lang"
+                android:icon="@drawable/ic_menu_share"
+                android:iconTint="@android:color/black"
+                android:orderInCategory="1500"/>
+
 
         </menu>
     </item>
