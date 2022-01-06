@@ -132,20 +132,6 @@
                     android:orderInCategory="1600"/>
 
                 <item
-                    android:id="@+id/nav_contact_us"
-                    android:title="@string/navContactUs"
-                    android:icon="@drawable/ic_menu_help_support"
-                    android:iconTint="@android:color/black"
-                    android:orderInCategory="1700"/>
-
-                <item
-                    android:id="@+id/nav_about"
-                    android:title="@string/navAboutUs"
-                    android:icon="@drawable/ic_menu_about_us"
-                    android:iconTint="@android:color/black"
-                    android:orderInCategory="1800"/>
-
-                <item
                     android:id="@+id/nav_privacy_policy"
                     android:title="@string/navPrivacyPolicy"
                     android:icon="@drawable/ic_menu_privacy_policy"
@@ -158,18 +144,18 @@
     </item>
 
     <item android:title="@string/languages"
-        android:orderInCategory="1400">
+        android:orderInCategory="2000">
 
         <menu>
-
+            <group android:checkableBehavior="none">
             <item
                 android:id="@+id/languages"
                 android:title="@string/lang"
                 android:icon="@drawable/ic_menu_share"
                 android:iconTint="@android:color/black"
-                android:orderInCategory="1500"/>
+                android:orderInCategory="2100"/>
 
-
+            </group>
         </menu>
     </item>
 
