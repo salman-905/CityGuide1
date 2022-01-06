@@ -62,7 +62,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Education"
+                android:text="@string/education"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/black"

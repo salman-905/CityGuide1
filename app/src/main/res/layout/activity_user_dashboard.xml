@@ -33,34 +33,32 @@
             android:layout_height="32dp"
             android:layout_marginStart="12dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:focusable="true"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_navigation_menu"
-            app:layout_constraintBottom_toBottomOf="@+id/add_places_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/add_places_btn1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/add_places_btn"
+            app:layout_constraintTop_toTopOf="@+id/content_view"
             app:tint="@android:color/black" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/add_places_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:id="@+id/add_places_btn1"
+            android:layout_width="164dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="164dp"
-            android:layout_height="17dp"
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner"-->
+<!--                android:layout_width="164dp"-->
+<!--                android:layout_height="17dp"-->
 
-            tools:layout_editor_absoluteY="32dp"
-            tools:ignore="MissingConstraints" />
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteY="32dp" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -76,7 +74,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/add_places_btn"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_menu"
             app:layout_constraintVertical_bias="0.0">
 
             <androidx.constraintlayout.widget.ConstraintLayout
