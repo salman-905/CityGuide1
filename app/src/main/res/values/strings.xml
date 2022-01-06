@@ -237,5 +237,7 @@
     <string name="PrincesSchool">Princes School</string>
     <string name="MuhairisPalace">Muhairis Palace</string>
     <string name="KhuzamPalace">"Khuzam Palace "</string>
+    <string name="languages">languages</string>
+    <string name="lang">اللغة العربية</string>
 
 </resources>
