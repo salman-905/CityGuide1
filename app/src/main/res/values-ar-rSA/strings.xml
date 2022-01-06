@@ -235,6 +235,7 @@
     <string name="PrincesSchool">المدرسة الاميرية</string>
     <string name="MuhairisPalace">قصر محيرس</string>
     <string name="KhuzamPalace">قصر خزام</string>
-
+    <string name="languages">اللغة</string>
+    <string name="lang">English</string>
 
 </resources>
