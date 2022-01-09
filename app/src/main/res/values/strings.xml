@@ -7,17 +7,16 @@
     <!-- Strings for OnBoardingScreen -->
 
     <!-- Titles -->
-    <string name="second_slide_title">Make A Call</string>
-    <string name="third_slide_title">Add Missing Place</string>
-    <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
+    <string name="second_slide_title">Dear visitor, welcome to Al-Ahsa Oasis</string>
+    <string name="third_slide_title">And there is more !!</string>
+    <string name="fourth_slide_title">Let\'s have enjoy in Al-Ahsa</string>
 
 
     <!-- Descriptions -->
 
-    <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
-    <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
-    <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
-    <string name="fourth_slide_desc">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
+    <string name="first_slide_desc">One of the greatest cities in the Kingdom of Saudi Arabia and its famous green oases</string>
+    <string name="second_slide_desc">In this application, visitors will discover the most important areas and monuments in the Al-Ahsa Oasis</string>
+    <string name="third_slide_desc">The application includes tourist hotels and the most important educational schools and universities</string>
 
     <!-- Buttons -->
     <string name="skip_btn">SKIP</string>
@@ -245,6 +244,7 @@
     <string name="princedec">The Princes School, the House of Culture, or the First Hofuf School is one of the oldest public schools in the Kingdom of Saudi Arabia,Its construction began in 1937 and was officially opened in February 1941.</string>
     <string name="Muhdec">Muhairis Palace is a palace built by Imam Saud bin Abdul Aziz on the top of a hill in 1208 AH for military purposes.</string>
     <string name="khuzdec">Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.</string>
-    <string name="first_slide_title">"One of the important cities located in the Kingdom of Saudi Arabia, specifically on the eastern "</string>
+    <string name="first_slide_title">The Beautiful City of Al-Ahsa</string>
+    <string name="fourth_slide_desc">"Here, you will definitely see and explore unique tourism "</string>
 
 </resources>
