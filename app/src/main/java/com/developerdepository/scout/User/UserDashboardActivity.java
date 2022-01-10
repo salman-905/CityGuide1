@@ -50,7 +50,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     private ConstraintLayout contentView, addPlacesBtn;
     private ImageButton dashboardMenu;
     private RecyclerView featuredRecycler, mostViewedRecycler, categoriesRecycler;
-    private TextView categoriesViewAll;
+//    private TextView categoriesViewAll;
     private ImageButton imgBtnRe, imgBtnHo, imgBtnEd, imgBtnSh;
     private Button button;
     //Other Variables
@@ -128,7 +128,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         featuredRecycler = findViewById(R.id.featured_locations_recycler);
         mostViewedRecycler = findViewById(R.id.most_viewed_locations_recycler);
         categoriesRecycler = findViewById(R.id.categories_recycler);
-        categoriesViewAll = findViewById(R.id.categories_view_all);
+//        categoriesViewAll = findViewById(R.id.categories_view_all);
 
     }
 
@@ -250,9 +250,9 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         categories.add(new CategoriesModel(R.color.card2, R.drawable.illustration_shopping, R.string.navShops));
         categories.add(new CategoriesModel(R.color.card5, R.drawable.illustration_restaurant, R.string.navRestaurants));
-        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hospital, R.string.navHotels));
+        categories.add(new CategoriesModel(R.color.card4, R.drawable.illustration_hotel, R.string.navHotels));
         categories.add(new CategoriesModel(R.color.card1, R.drawable.illustration_education, R.string.navEducation));
-        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, R.string.travel));
+//        categories.add(new CategoriesModel(R.color.card3, R.drawable.illustration_travel, R.string.travel));
 
         categoriesAdapter = new CategoriesAdapter(categories);
 
@@ -260,13 +260,13 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     }
 
     private void setActionOnViews() {
-        categoriesViewAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
-                CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
-            }
-        });
+//        categoriesViewAll.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
+//                CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
+//            }
+//        });
 
 //        addPlacesBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
