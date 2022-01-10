@@ -135,7 +135,7 @@
 
         </menu>
     </item>
-
+<!--change-->
     <item android:title="@string/languages"
         android:orderInCategory="2000">
 
