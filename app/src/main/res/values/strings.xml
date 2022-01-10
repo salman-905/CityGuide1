@@ -97,13 +97,13 @@
 
 
     <!-- RetailerLogin Strings -->
-    <string name="retailerLoginTitle" translatable="false">LOGIN</string>
+    <string name="retailerLoginTitle" translatable="false">currency converter</string>
     <string name="retailerLoginMessage" translatable="false">Sign in to continue!</string>
     <string name="retailerLoginUsernameHint" translatable="false">Username</string>
     <string name="retailerLoginPasswordHint" translatable="false">Password</string>
     <string name="retailerLoginRememberMeCheckBox" translatable="false">Remember Me</string>
     <string name="retailerLoginForgotPassword" translatable="false">Forgot Password?</string>
-    <string name="retailerLoginBtn" translatable="false">LOGIN</string>
+    <string name="retailerLoginBtn" translatable="false">Convert</string>
     <string name="retailerLoginCreateAccountMsg" translatable="false">Don\'t have an account?</string>
     <string name="retailerLoginCreateAccountBtn" translatable="false">Create Account</string>
 
@@ -246,5 +246,9 @@
     <string name="khuzdec">Khuzam Palace is located in the east of Al-Raqeqa neighborhood (currently Al-Mazrou’iya) located west of the city of Hofuf. It is the seat of the Bedouin residents who go to Al-Ahsa in the summer seasons for two months to exchange goods available in Al-Ahsa such as dates, sugar, some textiles, guns, ammunition and others for the goods they brought from the desert.</string>
     <string name="first_slide_title">The Beautiful City of Al-Ahsa</string>
     <string name="fourth_slide_desc">"Here, you will definitely see and explore unique tourism "</string>
+    <string name="curnamount">ENTER AMOUNT</string>
+    <string name="fromc">From Currency:</string>
+    <string name="result1">Result</string>
+    <string name="toc">To Currency:</string>
 
 </resources>

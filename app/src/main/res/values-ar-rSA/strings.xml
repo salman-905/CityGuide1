@@ -92,13 +92,13 @@
 
 
     <!-- RetailerLogin Strings -->
-    <string name="retailerLoginTitle" translatable="false">LOGIN</string>
+    <string name="retailerLoginTitle" translatable="false">محول العملات</string>
     <string name="retailerLoginMessage" translatable="false">Sign in to continue!</string>
     <string name="retailerLoginUsernameHint" translatable="false">Username</string>
     <string name="retailerLoginPasswordHint" translatable="false">Password</string>
     <string name="retailerLoginRememberMeCheckBox" translatable="false">Remember Me</string>
     <string name="retailerLoginForgotPassword" translatable="false">Forgot Password?</string>
-    <string name="retailerLoginBtn" translatable="false">LOGIN</string>
+    <string name="retailerLoginBtn" translatable="false">حول</string>
     <string name="retailerLoginCreateAccountMsg" translatable="false">Don\'t have an account?</string>
     <string name="retailerLoginCreateAccountBtn" translatable="false">Create Account</string>
 
@@ -244,6 +244,10 @@
     <string name="princedec">تعتبر مدرسة الأمراء أو دار الثقافة أو مدرسة الهفوف الأولى من أقدم المدارس الحكومية في المملكة العربية السعودية ، بدأ بناؤها عام 1937 وافتتحت رسمياً في فبراير 1941.</string>
     <string name="Muhdec">قصر المحيرس هو قصر بناه الإمام سعود بن عبد العزيز على قمة تل عام 1208 هـ لأغراض عسكرية.</string>
     <string name="khuzdec">يقع قصر خزام شرق حي الرقة (المزروعية حاليا) غرب مدينة الهفوف. هو مقر السكان البدو الذين يتوجهون إلى الأحساء في مواسم الصيف لمدة شهرين لتبادل البضائع المتوفرة في الأحساء مثل التمور والسكر وبعض المنسوجات والبنادق والذخيرة وغيرها مقابل البضائع التي جلبوها من الصحراء.</string>
+    <string name="curnamount">ادخل المبلغ</string>
+    <string name="fromc">العملة الاولى</string>
+    <string name="result1">النتيجة</string>
+    <string name="toc">العملة الثانية</string>
 
 
 </resources>
