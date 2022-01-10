@@ -170,6 +170,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
                 break;
         }
+//        change
         if (item.getItemId() == R.id.languages && getString(R.string.lang).equals("English")){
             setLocal(UserDashboardActivity.this, "en");
             finish();
