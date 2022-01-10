@@ -34,7 +34,7 @@
         <item
             android:id="@+id/nav_currency"
             android:title="@string/navCurrency"
-            android:icon="@drawable/ic_menu_add_places"
+            android:icon="@drawable/dollar"
             android:iconTint="@android:color/black"
             android:orderInCategory="500"/>
 
@@ -131,13 +131,6 @@
                     android:iconTint="@android:color/black"
                     android:orderInCategory="1600"/>
 
-                <item
-                    android:id="@+id/nav_privacy_policy"
-                    android:title="@string/navPrivacyPolicy"
-                    android:icon="@drawable/ic_menu_privacy_policy"
-                    android:iconTint="@android:color/black"
-                    android:orderInCategory="1900"/>
-
             </group>
 
         </menu>
@@ -151,7 +144,7 @@
                 <item
                     android:id="@+id/languages"
                     android:title="@string/lang"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/arabic1"
                     android:iconTint="@android:color/black"
                     android:orderInCategory="2100"/>
 
