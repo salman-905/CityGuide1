@@ -41,7 +41,7 @@
 
     <!-- Titles and Descriptions -->
     <string name="featured_locations" translatable="false">هنا معظم\nالاماكن\nالمميزة </string>
-    <string name="most_viewed_locations">الاكثر مشاهدة</string>
+    <string name="most_viewed_locations">القصور التاريخية</string>
     <string name="categories">الفئات</string>
     <string name="view_all">مشاهدة الكل</string>
     <string name="search_text">ابحث عن موقع</string>
