@@ -160,10 +160,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-//            case R.id.nav_all_categories :
-//                startActivity(new Intent(UserDashboardActivity.this, AllCategoriesActivity.class));
-//                CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
-//                break;
+                case R.id.nav_home :
+                startActivity(new Intent(UserDashboardActivity.this, UserDashboardActivity.class));
+                CustomIntent.customType(UserDashboardActivity.this, "left-to-right");
+                break;
             case R.id.nav_currency :
                 startActivity(new Intent(UserDashboardActivity.this, CurrencyActivity.class));
                 CustomIntent.customType(UserDashboardActivity.this, "bottom-to-up");
