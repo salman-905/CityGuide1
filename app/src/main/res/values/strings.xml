@@ -250,6 +250,12 @@
     <string name="fromc">From Currency:</string>
     <string name="result1">Result</string>
     <string name="toc">To Currency:</string>
+    <string name="alahsaWeather">Al-Ahsa\'a</string>
+    <string name="WeatherS">Weather Status</string>
+    <string name="loding">LOADING ..</string>
+
+    <string name="m">MAX</string>
+    <string name="n">MIN</string>
     <string name="education1_desc">d</string>
     <string name="education2_desc">d</string>
     <string name="education3_desc">d</string>

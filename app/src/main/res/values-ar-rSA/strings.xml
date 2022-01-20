@@ -248,6 +248,11 @@
     <string name="fromc">العملة الاولى</string>
     <string name="result1">النتيجة</string>
     <string name="toc">العملة الثانية</string>
+    <string name="alahsaWeather">الاحساء</string>
+    <string name="WeatherS">حالة الطقس</string>
+    <string name="loding">جاري التحميل ..</string>
+    <string name="m">العظمى</string>
+    <string name="n">الصغرى</string>
     <string name="education1_desc">d</string>
     <string name="education2_desc">d</string>
     <string name="education3_desc">d</string>
