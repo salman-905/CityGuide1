@@ -14,6 +14,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.developerdepository.scout.R;
+import com.google.gson.JsonObject;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -25,10 +28,11 @@ public class CurrencyActivity extends AppCompatActivity {
     Button b1;
     TextView result ;
     ImageButton backbtn;
-
+    double cfirst ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final String API_KEY ="4f6a6f6ebccbd40d1aab051a";
         //StatusBar Color
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         getWindow().setStatusBarColor(getResources().getColor(R.color.dashboard_background));
@@ -61,6 +65,29 @@ public class CurrencyActivity extends AppCompatActivity {
 
         b1 = findViewById(R.id.btn1);
 
+        Ion.with(this)
+                .load("https://v6.exchangerate-api.com/v6/"+API_KEY+"/latest/"+ sp1.getSelectedItem().toString())
+                .asJsonObject()
+                .setCallback(new FutureCallback<JsonObject>() {
+                    @Override
+                    public void onCompleted(Exception e, JsonObject result) {
+                        if (e != null){
+                        Toast.makeText(CurrencyActivity.this, "SERVER ERROR", Toast.LENGTH_SHORT).show();
+                        // do stuff with the result or error
+
+                            }
+                        else
+                        {
+                            String s22 = sp2.getSelectedItem().toString();
+                            JsonObject curancyarr = result.get("conversion_rates").getAsJsonObject();
+                             cfirst = curancyarr.getAsJsonObject().get(s22).getAsDouble();
+
+//                            JsonArray curancyarr = result.get("conversion_rates").getAsJsonArray();
+//                            cfirst = curancyarr.getAsJsonObject().get(String.valueOf(sp2.getSelectedItem())).getAsDouble();
+
+                        }
+                    }
+                });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,14 +101,14 @@ public class CurrencyActivity extends AppCompatActivity {
                 if(sp1.getSelectedItem().toString().equals("SAR") && sp2.getSelectedItem().toString().equals("Indian Rupees"))
                 {
 
-                    tot = amt *19.943;
+                    tot = amt * cfirst  ;
                       String i = "₹";
                     String x = nf.format(tot);
                     result.setText( i + x  );
                 }
                 else if(sp1.getSelectedItem().toString().equals("SAR") && sp2.getSelectedItem().toString().equals("USD"))
                 {
-                    tot = amt / 3.75;
+                    tot = amt / cfirst;
                     String i = "$";
                     String x = nf.format(tot);
                     result.setText(i+x);
@@ -90,7 +117,7 @@ public class CurrencyActivity extends AppCompatActivity {
 
                 else if(sp1.getSelectedItem().toString().equals("SAR") && sp2.getSelectedItem().toString().equals("EUR"))
                 {
-                    tot = amt * 0.23552;
+                    tot = amt * cfirst;
                     String i = "€";
                     String x = nf.format(tot);
                     result.setText( i+x  );
@@ -101,14 +128,14 @@ public class CurrencyActivity extends AppCompatActivity {
                 else if(sp1.getSelectedItem().toString().equals("Indian Rupees") && sp2.getSelectedItem().toString().equals("SAR"))
                 {
 
-                    tot = amt /19.943;
+                    tot = amt /cfirst;
                     String i = "SAR";
                     String x = nf.format(tot);
                     result.setText( i+x  );
                 }
                 else if(sp1.getSelectedItem().toString().equals("USD") && sp2.getSelectedItem().toString().equals("SAR"))
                 {
-                    tot = amt * 3.75;
+                    tot = amt * cfirst;
                     String i = "SAR";
                     String x = nf.format(tot);
                     result.setText( i+x  );
@@ -119,7 +146,7 @@ public class CurrencyActivity extends AppCompatActivity {
 
                 else if(sp1.getSelectedItem().toString().equals("EUR") && sp2.getSelectedItem().toString().equals("SAR"))
                 {
-                    tot = amt / 0.23552;
+                    tot = amt / cfirst;
                     String i = "SAR";
                     String x = nf.format(tot);
                     result.setText( i + x  );
