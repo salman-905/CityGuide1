@@ -98,7 +98,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             if (isNetworkConnected()){
                 loadWeatherByCityName(city);
             }else {
-                Toast.makeText(this, "Please Connect your Phone to the Internet",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Please Connect your Phone to the Internet",Toast.LENGTH_SHORT).show();
             }
             imgBtnRe = findViewById(R.id.imgBtnRe);
             imgBtnHo = findViewById(R.id.imgBtnHo);
