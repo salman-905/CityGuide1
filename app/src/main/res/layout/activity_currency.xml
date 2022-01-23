@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@color/colorPrimary"
     android:transitionName="transition_login"
     tools:context=".User.CurrencyActivity">
@@ -24,6 +25,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+=======
+    tools:context=".User.CurrencyActivity"
+    android:background="@color/lightWhite"
+    >
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/lightWhite"
+        >
+
+        <ImageButton
+            android:id="@+id/back_arrow_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@android:color/black"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+    <!--CHANGE-->
+>>>>>>> 826d0224205197afdcc926de3102f91206b8b94c
     <TextView
         android:id="@+id/retailer_login_title"
         android:layout_width="0dp"
@@ -192,31 +227,30 @@
         app:layout_constraintTop_toBottomOf="@+id/layout"
         tools:ignore="MissingConstraints" />
 
-    <TextView
+    <EditText
         android:id="@+id/result1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="@string/result1"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
         android:padding="8dp"
+        android:text="@string/result1"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:includeFontPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="186dp"
 
-        />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
