@@ -23,7 +23,7 @@ import retrofit2.Response;
 public class CurrencyActivity extends AppCompatActivity {
     Button button;
     EditText currencyToBeConverted;
-    EditText currencyConverted;
+    TextView currencyConverted;
     Spinner convertToDropdown;
     Spinner convertFromDropdown;
 
@@ -38,7 +38,7 @@ public class CurrencyActivity extends AppCompatActivity {
 
 
         //Initialization
-        currencyConverted = (EditText) findViewById(R.id.result1);
+        currencyConverted = (TextView) findViewById(R.id.result1);
         currencyToBeConverted = (EditText) findViewById(R.id.txtamt);
         convertToDropdown = (Spinner) findViewById(R.id.spto);
         convertFromDropdown = (Spinner) findViewById(R.id.spfrom);
