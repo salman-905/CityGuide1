@@ -6,6 +6,7 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -26,7 +27,7 @@ public class CurrencyActivity extends AppCompatActivity {
     TextView currencyConverted;
     Spinner convertToDropdown;
     Spinner convertFromDropdown;
-
+    ImageButton backbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //StatusBar Color
@@ -43,9 +44,15 @@ public class CurrencyActivity extends AppCompatActivity {
         convertToDropdown = (Spinner) findViewById(R.id.spto);
         convertFromDropdown = (Spinner) findViewById(R.id.spfrom);
         button = (Button) findViewById(R.id.btn1);
-
+        backbtn = findViewById(R.id.back_arrow_btn);
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         //Adding Functionality
-        String[] dropDownList = {"USD", "INR","EUR","NZD","SAR"};
+        String[] dropDownList = {"USD", "INR","EUR","EGP","SAR","PHP","QAR","BHD","KWD","AED","OMR","YER"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, dropDownList);
         convertToDropdown.setAdapter(adapter);
         convertFromDropdown.setAdapter(adapter);
