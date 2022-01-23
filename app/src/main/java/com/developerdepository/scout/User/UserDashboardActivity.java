@@ -3,9 +3,11 @@ package com.developerdepository.scout.User;
 import static com.developerdepository.scout.R.drawable.house;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -84,57 +86,69 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
         getWindow().setStatusBarColor(getResources().getColor(R.color.dashboard_background));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
-        initViews();
 
-        setNavigationMenu();
-        setFeaturedRecycler();
-        setMostViewedRecycler();
-        setCategoriesRecycler();
-        setActionOnViews();
-        loadWeatherByCityName(city);
-        imgBtnRe = findViewById(R.id.imgBtnRe);
-        imgBtnHo = findViewById(R.id.imgBtnHo);
-        imgBtnEd = findViewById(R.id.imgBtnEd);
-        imgBtnSh = findViewById(R.id.imgBtnSh);
-        w1 = findViewById(R.id.weathercard);
+            initViews();
+
+            setNavigationMenu();
+            setFeaturedRecycler();
+            setMostViewedRecycler();
+            setCategoriesRecycler();
+            setActionOnViews();
+
+            if (isNetworkConnected()){
+                loadWeatherByCityName(city);
+            }else {
+                    Toast.makeText(this, "Please Connect your Phone to the Internet",Toast.LENGTH_SHORT).show();
+            }
+            imgBtnRe = findViewById(R.id.imgBtnRe);
+            imgBtnHo = findViewById(R.id.imgBtnHo);
+            imgBtnEd = findViewById(R.id.imgBtnEd);
+            imgBtnSh = findViewById(R.id.imgBtnSh);
+            w1 = findViewById(R.id.weathercard);
 //        test1 = findViewById(R.id.test1);
 
-        w1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loadWeatherByCityName(city);
-            }
-        });
+            w1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    loadWeatherByCityName(city);
+                }
+            });
 
-        imgBtnRe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(UserDashboardActivity.this, RestaurantsActivity.class));
-            }
-        });
+            imgBtnRe.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(UserDashboardActivity.this, RestaurantsActivity.class));
+                }
+            });
 
-        imgBtnHo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(UserDashboardActivity.this, HotelsActivity.class));
+            imgBtnHo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(UserDashboardActivity.this, HotelsActivity.class));
 
-            }
-        });
+                }
+            });
 
-        imgBtnEd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(UserDashboardActivity.this, EducationActivity.class));
-            }
-        });
+            imgBtnEd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(UserDashboardActivity.this, EducationActivity.class));
+                }
+            });
 
-        imgBtnSh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(UserDashboardActivity.this, ShopsActivity.class));
-            }
-        });
+            imgBtnSh.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(UserDashboardActivity.this, ShopsActivity.class));
+                }
+            });
 
+
+    }
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
 
     private void initViews() {
