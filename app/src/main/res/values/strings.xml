@@ -256,5 +256,6 @@
 
     <string name="m">MAX</string>
     <string name="n">MIN</string>
+    <string name="error">Please Enter the number here</string>
 
 </resources>

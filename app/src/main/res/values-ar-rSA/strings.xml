@@ -253,5 +253,6 @@
     <string name="loding">جاري التحميل ..</string>
     <string name="m">العظمى</string>
     <string name="n">الصغرى</string>
+    <string name="error">اها اخلص حط رقم عاد</string>
 
 </resources>
